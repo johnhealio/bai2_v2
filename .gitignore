@@ -1,0 +1,4 @@
+/target
+*.pdf
+/.claude/
+Cargo.lock
