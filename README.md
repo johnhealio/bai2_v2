@@ -24,6 +24,7 @@ from the BAI Cash Management Balance Reporting Specifications, Version 2.
 | 9 | `GroupTrailer` — record type 98 | Done |
 | 10 | `Group` — aggregates 02 + (03 + 16* + 49)* + 98 | Done |
 | 11 | `FileHeader` — record type 01 | Done |
+| 12 | `FileTrailer` — record type 99 | Done |
 
 This is a work in progress: no top-level file parser exists yet (nothing
 yet assembles multiple `Group`s and a `FileHeader`/`FileTrailer` into a
