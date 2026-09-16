@@ -31,6 +31,7 @@ design unless the user explicitly asks; treat its `docs/*.md` as settled.
 | 6 | ACCOUNT_TRAILER (record type 49) | Done — `src/account_trailer.rs`, `docs/ACCOUNT_TRAILER.md` |
 | 7 | ACCOUNT (aggregates 03 + 16* + 49 via `AccountIdentifier`/`TransactionDetail`/`AccountTrailer`) | Done — `src/account.rs`, `docs/ACCOUNT.md` |
 | 8 | GROUP_HEADER (record type 02) | Done — `src/group_header.rs`, `docs/GROUP_HEADER.md` |
+| 9 | GROUP_TRAILER (record type 98) | Done — `src/group_trailer.rs`, `docs/GROUP_TRAILER.md` |
 
 ## Conventions established so far
 
