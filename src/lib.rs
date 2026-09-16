@@ -2,6 +2,7 @@ pub mod account;
 pub mod account_identifier;
 pub mod account_trailer;
 pub mod currency_code;
+pub mod file;
 pub mod file_header;
 pub mod file_trailer;
 pub mod funds_type;
@@ -17,6 +18,7 @@ pub use account_identifier::{
 };
 pub use account_trailer::{AccountTrailer, AccountTrailerError};
 pub use currency_code::CurrencyCode;
+pub use file::{File, FileError, FileViolation};
 pub use file_header::{FileHeader, FileHeaderError};
 pub use file_trailer::{FileTrailer, FileTrailerError};
 pub use funds_type::{

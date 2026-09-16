@@ -25,13 +25,15 @@ from the BAI Cash Management Balance Reporting Specifications, Version 2.
 | 10 | `Group` — aggregates 02 + (03 + 16* + 49)* + 98 | Done |
 | 11 | `FileHeader` — record type 01 | Done |
 | 12 | `FileTrailer` — record type 99 | Done |
+| 13 | `File` — aggregates 01 + (02 + (03 + 16* + 49)* + 98)* + 99 | Done |
 
-This is a work in progress: no top-level file parser exists yet (nothing
-yet assembles multiple `Group`s and a `FileHeader`/`FileTrailer` into a
-full file, the way `Group` itself assembles its `Account`s), and both
-`Account::push` and `Group::push` assume any 88 (Continuation) records
-have already been merged into whichever record they continue — see
-`docs/ACCOUNT.md`/`docs/GROUP.md`.
+This is a work in progress: `File` now assembles a complete BAI2 file end
+to end (`FileHeader` + `Group`s + `FileTrailer`), but `File::push`/
+`Group::push`/`Account::push` all still assume any 88 (Continuation)
+records have already been merged into whichever record they continue —
+see `docs/ACCOUNT.md`/`docs/GROUP.md`/`docs/FILE.md`. No line-splitting
+or 88-merging front end exists yet, so callers must still supply
+already-merged, already-split record strings.
 See `CLAUDE.md` for the current phase plan and
 `docs/` for each module's
 technical spec.
