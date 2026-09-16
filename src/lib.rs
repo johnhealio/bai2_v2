@@ -1,3 +1,4 @@
+pub mod account;
 pub mod account_identifier;
 pub mod account_trailer;
 pub mod currency_code;
@@ -5,6 +6,7 @@ pub mod funds_type;
 pub mod transaction_detail;
 pub mod type_code;
 
+pub use account::{Account, AccountError, AccountViolation};
 pub use account_identifier::{
     AccountIdentifier, AccountIdentifierError, AccountIdentifierViolation,
 };

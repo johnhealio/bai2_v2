@@ -29,6 +29,7 @@ design unless the user explicitly asks; treat its `docs/*.md` as settled.
 | 4 | TRANSACTION_DETAIL (record type 16) | Done — `src/transaction_detail.rs`, `docs/TRANSACTION_DETAIL.md` |
 | 5 | ACCOUNT_IDENTIFIER (record type 03, incl. 88 continuations) | Done — `src/account_identifier.rs`, `docs/ACCOUNT_IDENTIFIER.md` |
 | 6 | ACCOUNT_TRAILER (record type 49) | Done — `src/account_trailer.rs`, `docs/ACCOUNT_TRAILER.md` |
+| 7 | ACCOUNT (aggregates 03 + 16* + 49 via `AccountIdentifier`/`TransactionDetail`/`AccountTrailer`) | Done — `src/account.rs`, `docs/ACCOUNT.md` |
 
 ## Conventions established so far
 
