@@ -2,6 +2,7 @@ pub mod account;
 pub mod account_identifier;
 pub mod account_trailer;
 pub mod currency_code;
+pub mod file_header;
 pub mod funds_type;
 pub mod group;
 pub mod group_header;
@@ -15,6 +16,7 @@ pub use account_identifier::{
 };
 pub use account_trailer::{AccountTrailer, AccountTrailerError};
 pub use currency_code::CurrencyCode;
+pub use file_header::{FileHeader, FileHeaderError};
 pub use funds_type::{
     Date, DistributedAvailability, DistributionDay, FundsType, FundsTypeError, Time, ValueDate,
 };

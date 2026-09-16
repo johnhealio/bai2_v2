@@ -33,6 +33,7 @@ design unless the user explicitly asks; treat its `docs/*.md` as settled.
 | 8 | GROUP_HEADER (record type 02) | Done — `src/group_header.rs`, `docs/GROUP_HEADER.md` |
 | 9 | GROUP_TRAILER (record type 98) | Done — `src/group_trailer.rs`, `docs/GROUP_TRAILER.md` |
 | 10 | GROUP (aggregates 02 + (03+16*+49)* + 98 via `GroupHeader`/`Account`/`GroupTrailer`) | Done — `src/group.rs`, `docs/GROUP.md` |
+| 11 | FILE_HEADER (record type 01) | Done — `src/file_header.rs`, `docs/FILE_HEADER.md` |
 
 ## Conventions established so far
 

@@ -23,12 +23,14 @@ from the BAI Cash Management Balance Reporting Specifications, Version 2.
 | 8 | `GroupHeader` — record type 02 | Done |
 | 9 | `GroupTrailer` — record type 98 | Done |
 | 10 | `Group` — aggregates 02 + (03 + 16* + 49)* + 98 | Done |
+| 11 | `FileHeader` — record type 01 | Done |
 
 This is a work in progress: no top-level file parser exists yet (nothing
-yet assembles multiple `Group`s into a full file, the way `Group` itself
-assembles its `Account`s), and both `Account::push` and `Group::push`
-assume any 88 (Continuation) records have already been merged into
-whichever record they continue — see `docs/ACCOUNT.md`/`docs/GROUP.md`.
+yet assembles multiple `Group`s and a `FileHeader`/`FileTrailer` into a
+full file, the way `Group` itself assembles its `Account`s), and both
+`Account::push` and `Group::push` assume any 88 (Continuation) records
+have already been merged into whichever record they continue — see
+`docs/ACCOUNT.md`/`docs/GROUP.md`.
 See `CLAUDE.md` for the current phase plan and
 `docs/` for each module's
 technical spec.
