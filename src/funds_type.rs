@@ -109,7 +109,7 @@ impl fmt::Display for FundsTypeError {
 
 impl std::error::Error for FundsTypeError {}
 
-fn parse_date(s: &str) -> Result<Date, FundsTypeError> {
+pub(crate) fn parse_date(s: &str) -> Result<Date, FundsTypeError> {
     if s.len() != 6 || !s.bytes().all(|b| b.is_ascii_digit()) {
         return Err(FundsTypeError::InvalidDate(s.to_string()));
     }
@@ -122,7 +122,7 @@ fn parse_date(s: &str) -> Result<Date, FundsTypeError> {
     Ok(Date { year, month, day })
 }
 
-fn parse_time(s: &str) -> Result<Time, FundsTypeError> {
+pub(crate) fn parse_time(s: &str) -> Result<Time, FundsTypeError> {
     if s.len() != 4 || !s.bytes().all(|b| b.is_ascii_digit()) {
         return Err(FundsTypeError::InvalidTime(s.to_string()));
     }

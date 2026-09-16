@@ -16,16 +16,24 @@ from the BAI Cash Management Balance Reporting Specifications, Version 2.
 | 1 | `TypeCode` — every Uniform BAI Balance Reporting Type Code (Appendix A) | Done |
 | 2 | `FundsType` — the composite Funds Type field (03/16 records) | Done |
 | 3 | `CurrencyCode` — every ISO 4217 currency code (Appendix B) | Done |
-| 4 | `TransactionDetail` — record type 16 | Not started |
+| 4 | `TransactionDetail` — record type 16 | Done |
+| 5 | `AccountIdentifier` — record type 03, incl. 88 continuations | Done |
+| 6 | `AccountTrailer` — record type 49 | Done |
+| 7 | `Account` — aggregates 03 + 16* + 49 | Done |
+| 8 | `GroupHeader` — record type 02 | Done |
 
-This is a work in progress: no top-level file parser exists yet. See
+This is a work in progress: no top-level file parser exists yet (nothing
+yet assembles a `GroupHeader` with the `Account`s under it, the way
+`Account` assembles its own records), and `Account::push` currently
+assumes any 88 (Continuation) records have already been merged into
+whichever 03/16 record they continue — see `docs/ACCOUNT.md`. See
 `CLAUDE.md` for the current phase plan and `docs/` for each module's
 technical spec.
 
 ## Usage
 
 ```rust
-use bai2::{CurrencyCode, FundsType, TypeCode};
+use bai2::{Account, CurrencyCode, FundsType, TypeCode};
 
 // A 3-digit BAI2 type code.
 let code = TypeCode::from("010");
@@ -40,6 +48,13 @@ assert_eq!(currency.decimals(), 0); // Yen has no minor unit
 // A Funds Type composite field, already comma-split.
 let (funds_type, consumed) = FundsType::parse(&["V", "040701", "1300"]).unwrap();
 assert_eq!(consumed, 3);
+
+// An account, assembled by pushing its 03/16.../49 records in order.
+let mut account = Account::new(CurrencyCode::Usd);
+account.push("03,0975312468,,010,500000,,,190,70000000,4,0/").unwrap();
+account.push("16,165,1500000,1,DD1620,, DEALER PAYMENTS").unwrap();
+account.push("49,72000000,3/").unwrap();
+assert_eq!(account.validate(), vec![]); // control total reconciles
 ```
 
 Every code table (`TypeCode`, `CurrencyCode`) is hardcoded from its
