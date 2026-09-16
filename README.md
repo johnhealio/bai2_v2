@@ -26,14 +26,15 @@ from the BAI Cash Management Balance Reporting Specifications, Version 2.
 | 11 | `FileHeader` — record type 01 | Done |
 | 12 | `FileTrailer` — record type 99 | Done |
 | 13 | `File` — aggregates 01 + (02 + (03 + 16* + 49)* + 98)* + 99 | Done |
+| 14 | `BaiReader` — folds 88 continuation records into logical lines | Done |
 
-This is a work in progress: `File` now assembles a complete BAI2 file end
-to end (`FileHeader` + `Group`s + `FileTrailer`), but `File::push`/
-`Group::push`/`Account::push` all still assume any 88 (Continuation)
-records have already been merged into whichever record they continue —
-see `docs/ACCOUNT.md`/`docs/GROUP.md`/`docs/FILE.md`. No line-splitting
-or 88-merging front end exists yet, so callers must still supply
-already-merged, already-split record strings.
+`BaiReader` plus `File` together give an end-to-end path from a raw BAI2
+transmission (anything implementing `std::io::Read`, 88 continuations and
+all) to a fully validated `File`: wrap the source in a `BaiReader`, `push`
+each yielded line into a `File`, then call `validate()`. See
+`docs/READER.md` for exactly how continuation folding works, and its one
+real scope boundary (assumes one physical record per text line — a raw
+fixed-width, non-newline-delimited transmission isn't handled).
 See `CLAUDE.md` for the current phase plan and
 `docs/` for each module's
 technical spec.
@@ -41,7 +42,7 @@ technical spec.
 ## Usage
 
 ```rust
-use bai2::{Account, CurrencyCode, FundsType, TypeCode};
+use bai2::{BaiReader, CurrencyCode, File, FundsType, TypeCode};
 
 // A 3-digit BAI2 type code.
 let code = TypeCode::from("010");
@@ -57,12 +58,20 @@ assert_eq!(currency.decimals(), 0); // Yen has no minor unit
 let (funds_type, consumed) = FundsType::parse(&["V", "040701", "1300"]).unwrap();
 assert_eq!(consumed, 3);
 
-// An account, assembled by pushing its 03/16.../49 records in order.
-let mut account = Account::new(CurrencyCode::Usd);
-account.push("03,0975312468,,010,500000,,,190,70000000,4,0/").unwrap();
-account.push("16,165,1500000,1,DD1620,, DEALER PAYMENTS").unwrap();
-account.push("49,72000000,3/").unwrap();
-assert_eq!(account.validate(), vec![]); // control total reconciles
+// A full file, read from anything implementing `std::io::Read`, with
+// any 88 continuation records folded in automatically.
+let raw = "01,S,R,040620,0200,1,,,2/\n\
+           02,,ORIG,1,040620/\n\
+           03,111,,190,100,4,0/\n\
+           49,100,2/\n\
+           98,100,1,4/\n\
+           99,100,1,6/\n";
+let mut file = File::new();
+for line in BaiReader::new(raw.as_bytes()) {
+    file.push(&line.unwrap()).unwrap();
+}
+assert_eq!(file.groups.len(), 1);
+assert_eq!(file.validate(), vec![]); // every control total reconciles
 ```
 
 Every code table (`TypeCode`, `CurrencyCode`) is hardcoded from its

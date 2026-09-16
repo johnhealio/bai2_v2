@@ -36,6 +36,7 @@ design unless the user explicitly asks; treat its `docs/*.md` as settled.
 | 11 | FILE_HEADER (record type 01) | Done — `src/file_header.rs`, `docs/FILE_HEADER.md` |
 | 12 | FILE_TRAILER (record type 99) | Done — `src/file_trailer.rs`, `docs/FILE_TRAILER.md` |
 | 13 | FILE (aggregates 01 + (02+(03+16*+49)*+98)* + 99 via `FileHeader`/`Group`/`FileTrailer`) | Done — `src/file.rs`, `docs/FILE.md` |
+| 14 | READER (folds 88 continuation records into logical lines for `File`/`Group`/`Account::push`) | Done — `src/reader.rs`, `docs/READER.md` |
 
 ## Conventions established so far
 
