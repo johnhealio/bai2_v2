@@ -3,6 +3,7 @@ pub mod account_identifier;
 pub mod account_trailer;
 pub mod currency_code;
 pub mod funds_type;
+pub mod group;
 pub mod group_header;
 pub mod group_trailer;
 pub mod transaction_detail;
@@ -17,6 +18,7 @@ pub use currency_code::CurrencyCode;
 pub use funds_type::{
     Date, DistributedAvailability, DistributionDay, FundsType, FundsTypeError, Time, ValueDate,
 };
+pub use group::{Group, GroupError, GroupViolation};
 pub use group_header::{AsOfDateModifier, GroupHeader, GroupHeaderError, GroupStatus};
 pub use group_trailer::{GroupTrailer, GroupTrailerError};
 pub use transaction_detail::{TransactionDetail, TransactionDetailError};
