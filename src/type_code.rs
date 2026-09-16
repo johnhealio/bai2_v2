@@ -1459,11 +1459,15 @@ impl TypeCode {
             Self::AverageClosingLedgerMtd => "Average Closing Ledger MTD",
             Self::AverageClosingLedgerPreviousMonth => "Average Closing Ledger - Previous Month",
             Self::AggregateBalanceAdjustments => "Aggregate Balance Adjustments",
-            Self::AverageClosingLedgerYtdPreviousMonth => "Average Closing Ledger YTD - Previous Month",
+            Self::AverageClosingLedgerYtdPreviousMonth => {
+                "Average Closing Ledger YTD - Previous Month"
+            }
             Self::AverageClosingLedgerYtd => "Average Closing Ledger YTD",
             Self::CurrentLedger => "Current Ledger",
             Self::AchNetPosition => "ACH Net Position",
-            Self::OpeningAvailableTotalSameDayAchDtcDeposit => "Opening Available + Total Same-Day ACH DTC Deposit",
+            Self::OpeningAvailableTotalSameDayAchDtcDeposit => {
+                "Opening Available + Total Same-Day ACH DTC Deposit"
+            }
             Self::OpeningAvailable => "Opening Available",
             Self::AverageOpeningAvailableMtd => "Average Opening Available MTD",
             Self::AverageOpeningAvailableYtd => "Average Opening Available YTD",
@@ -1472,7 +1476,9 @@ impl TypeCode {
             Self::ClosingAvailable => "Closing Available",
             Self::AverageClosingAvailableMtd => "Average Closing Available MTD",
             Self::AverageClosingAvailableLastMonth => "Average Closing Available - Last Month",
-            Self::AverageClosingAvailableYtdLastMonth => "Average Closing Available YTD - Last Month",
+            Self::AverageClosingAvailableYtdLastMonth => {
+                "Average Closing Available YTD - Last Month"
+            }
             Self::AverageClosingAvailableYtd => "Average Closing Available YTD",
             Self::LoanBalance => "Loan Balance",
             Self::TotalInvestmentPosition => "Total Investment Position",
@@ -1536,7 +1542,9 @@ impl TypeCode {
             Self::PreauthorizedAchCredit => "Preauthorized ACH Credit",
             Self::AchSettlementCr => "ACH Settlement",
             Self::AchSettlementCredits => "ACH Settlement Credits",
-            Self::AchReturnItemOrAdjustmentSettlementCr => "ACH Return Item or Adjustment Settlement",
+            Self::AchReturnItemOrAdjustmentSettlementCr => {
+                "ACH Return Item or Adjustment Settlement"
+            }
             Self::MiscellaneousAchCredit => "Miscellaneous ACH Credit",
             Self::TotalOtherCheckDeposits => "Total Other Check Deposits",
             Self::IndividualLoanDeposit => "Individual Loan Deposit",
@@ -1555,7 +1563,9 @@ impl TypeCode {
             Self::TotalCashLetterAdjustments => "Total Cash Letter Adjustments",
             Self::CashLetterAdjustmentCr => "Cash Letter Adjustment",
             Self::TotalIncomingMoneyTransfers => "Total Incoming Money Transfers",
-            Self::IndividualIncomingInternalMoneyTransfer => "Individual Incoming Internal Money Transfer",
+            Self::IndividualIncomingInternalMoneyTransfer => {
+                "Individual Incoming Internal Money Transfer"
+            }
             Self::IncomingMoneyTransfer => "Incoming Money Transfer",
             Self::MoneyTransferAdjustmentCr => "Money Transfer Adjustment",
             Self::CompensationCr => "Compensation",
@@ -1564,8 +1574,12 @@ impl TypeCode {
             Self::BondOperationsCredit => "Bond Operations Credit",
             Self::TotalBookTransferCredits => "Total Book Transfer Credits",
             Self::BookTransferCredit => "Book Transfer Credit",
-            Self::TotalInternationalMoneyTransferCredits => "Total International Money Transfer Credits",
-            Self::IndividualInternationalMoneyTransferCredit => "Individual International Money Transfer Credit",
+            Self::TotalInternationalMoneyTransferCredits => {
+                "Total International Money Transfer Credits"
+            }
+            Self::IndividualInternationalMoneyTransferCredit => {
+                "Individual International Money Transfer Credit"
+            }
             Self::TotalInternationalCredits => "Total International Credits",
             Self::ForeignLetterOfCredit => "Foreign Letter of Credit",
             Self::LetterOfCreditCr => "Letter of Credit",
@@ -1649,8 +1663,12 @@ impl TypeCode {
             Self::TotalSecuritiesInterestChf => "Total Securities Interest - CHF",
             Self::TotalEscrowCredits => "Total Escrow Credits",
             Self::IndividualEscrowCredit => "Individual Escrow Credit",
-            Self::TotalMiscellaneousSecuritiesCreditsFf => "Total Miscellaneous Securities Credits - FF",
-            Self::TotalMiscellaneousSecuritiesCreditsChf => "Total Miscellaneous Securities Credits - CHF",
+            Self::TotalMiscellaneousSecuritiesCreditsFf => {
+                "Total Miscellaneous Securities Credits - FF"
+            }
+            Self::TotalMiscellaneousSecuritiesCreditsChf => {
+                "Total Miscellaneous Securities Credits - CHF"
+            }
             Self::TotalSecuritiesSold => "Total Securities Sold",
             Self::TotalBrokerDeposits => "Total Broker Deposits",
             Self::TotalBrokerDepositsFf => "Total Broker Deposits - FF",
@@ -1672,8 +1690,12 @@ impl TypeCode {
             Self::CreditAdjustment => "Credit Adjustment",
             Self::YtdAdjustmentCredit => "YTD Adjustment Credit",
             Self::InterestAdjustmentCredit => "Interest Adjustment Credit",
-            Self::TotalCreditsLessWireTransferAndReturnedChecks => "Total Credits Less Wire Transfer and Returned Checks",
-            Self::GrandTotalCreditsLessGrandTotalDebits => "Grand Total Credits Less Grand Total Debits",
+            Self::TotalCreditsLessWireTransferAndReturnedChecks => {
+                "Total Credits Less Wire Transfer and Returned Checks"
+            }
+            Self::GrandTotalCreditsLessGrandTotalDebits => {
+                "Grand Total Credits Less Grand Total Debits"
+            }
             Self::CorrespondentCollection => "Correspondent Collection",
             Self::CorrespondentCollectionAdjustmentCr => "Correspondent Collection Adjustment",
             Self::LoanParticipationCr => "Loan Participation",
@@ -1710,7 +1732,9 @@ impl TypeCode {
             Self::TotalDebits => "Total Debits",
             Self::TotalDebitAmountMtd => "Total Debit Amount MTD",
             Self::TodaySTotalDebits => "Today's Total Debits",
-            Self::TotalDebitLessWireTransfersAndChargeBacks => "Total Debit Less Wire Transfers and Charge-Backs",
+            Self::TotalDebitLessWireTransfersAndChargeBacks => {
+                "Total Debit Less Wire Transfers and Charge-Backs"
+            }
             Self::DebitsNotDetailed => "Debits not Detailed",
             Self::FloatAdjustmentDb => "Float Adjustment",
             Self::DebitAnyType => "Debit (Any Type)",
@@ -1737,7 +1761,9 @@ impl TypeCode {
             Self::CorporateTradePaymentSettlementDb => "Corporate Trade Payment Settlement",
             Self::AchSettlementDb => "ACH Settlement",
             Self::AchSettlementDebits => "ACH Settlement Debits",
-            Self::AchReturnItemOrAdjustmentSettlementDb => "ACH Return Item or Adjustment Settlement",
+            Self::AchReturnItemOrAdjustmentSettlementDb => {
+                "ACH Return Item or Adjustment Settlement"
+            }
             Self::MiscellaneousAchDebit => "Miscellaneous ACH Debit",
             Self::TotalCheckPaid => "Total Check Paid",
             Self::TotalCheckPaidCumulativeMtd => "Total Check Paid - Cumulative MTD",
@@ -1757,8 +1783,12 @@ impl TypeCode {
             Self::CashLetterDebit => "Cash Letter Debit",
             Self::CashLetterAdjustmentDb => "Cash Letter Adjustment",
             Self::TotalOutgoingMoneyTransfers => "Total Outgoing Money Transfers",
-            Self::IndividualOutgoingInternalMoneyTransfer => "Individual Outgoing Internal Money Transfer",
-            Self::CustomerTerminalInitiatedMoneyTransfer => "Customer Terminal Initiated Money Transfer",
+            Self::IndividualOutgoingInternalMoneyTransfer => {
+                "Individual Outgoing Internal Money Transfer"
+            }
+            Self::CustomerTerminalInitiatedMoneyTransfer => {
+                "Customer Terminal Initiated Money Transfer"
+            }
             Self::OutgoingMoneyTransfer => "Outgoing Money Transfer",
             Self::MoneyTransferAdjustmentDb => "Money Transfer Adjustment",
             Self::CompensationDb => "Compensation",
@@ -1767,8 +1797,12 @@ impl TypeCode {
             Self::BondOperationsDebit => "Bond Operations Debit",
             Self::TotalBookTransferDebits => "Total Book Transfer Debits",
             Self::BookTransferDebit => "Book Transfer Debit",
-            Self::TotalInternationalMoneyTransferDebits => "Total International Money Transfer Debits",
-            Self::IndividualInternationalMoneyTransferDebits => "Individual International Money Transfer Debits",
+            Self::TotalInternationalMoneyTransferDebits => {
+                "Total International Money Transfer Debits"
+            }
+            Self::IndividualInternationalMoneyTransferDebits => {
+                "Individual International Money Transfer Debits"
+            }
             Self::TotalInternationalDebits => "Total International Debits",
             Self::LetterOfCreditDebit => "Letter of Credit Debit",
             Self::LetterOfCreditDb => "Letter of Credit",
@@ -1787,7 +1821,9 @@ impl TypeCode {
             Self::SecurityCollectionDebit => "Security Collection Debit",
             Self::TotalMiscellaneousSecuritiesDbFf => "Total Miscellaneous Securities DB - FF",
             Self::PurchaseOfEquitySecurities => "Purchase of Equity Securities",
-            Self::TotalMiscellaneousSecuritiesDebitChf => "Total Miscellaneous Securities Debit - CHF",
+            Self::TotalMiscellaneousSecuritiesDebitChf => {
+                "Total Miscellaneous Securities Debit - CHF"
+            }
             Self::TotalCollectionDebit => "Total Collection Debit",
             Self::MaturedRepurchaseOrder => "Matured Repurchase Order",
             Self::TotalBankersAcceptancesDebit => "Total Bankers' Acceptances Debit",
@@ -1822,8 +1858,12 @@ impl TypeCode {
             Self::ZbaDebitAdjustment => "ZBA Debit Adjustment",
             Self::TotalControlledDisbursingDebits => "Total Controlled Disbursing Debits",
             Self::IndividualControlledDisbursingDebit => "Individual Controlled Disbursing Debit",
-            Self::TotalDisbursingChecksPaidEarlyAmount => "Total Disbursing Checks Paid - Early Amount",
-            Self::TotalDisbursingChecksPaidLaterAmount => "Total Disbursing Checks Paid - Later Amount",
+            Self::TotalDisbursingChecksPaidEarlyAmount => {
+                "Total Disbursing Checks Paid - Early Amount"
+            }
+            Self::TotalDisbursingChecksPaidLaterAmount => {
+                "Total Disbursing Checks Paid - Later Amount"
+            }
             Self::DisbursingFundingRequirement => "Disbursing Funding Requirement",
             Self::FrbPresentmentEstimateFedEstimate => "FRB Presentment Estimate (Fed Estimate)",
             Self::LateDebitsAfterNotification => "Late Debits (After Notification)",
@@ -1840,8 +1880,12 @@ impl TypeCode {
             Self::TotalWireTransfersOutFf => "Total Wire Transfers Out - FF",
             Self::TotalInternationalDebitChf => "Total International Debit - CHF",
             Self::TotalInternationalDebitFf => "Total International Debit - FF",
-            Self::TotalFederalReserveBankCommercialBankDebit => "Total Federal Reserve Bank - Commercial Bank Debit",
-            Self::FederalReserveBankCommercialBankDebit => "Federal Reserve Bank - Commercial Bank Debit",
+            Self::TotalFederalReserveBankCommercialBankDebit => {
+                "Total Federal Reserve Bank - Commercial Bank Debit"
+            }
+            Self::FederalReserveBankCommercialBankDebit => {
+                "Federal Reserve Bank - Commercial Bank Debit"
+            }
             Self::TotalSecuritiesPurchasedChf => "Total Securities Purchased - CHF",
             Self::TotalSecuritiesPurchasedFf => "Total Securities Purchased - FF",
             Self::TotalBrokerDebitsChf => "Total Broker Debits - CHF",
@@ -1917,7 +1961,9 @@ impl TypeCode {
             Self::AmountAppliedToLateCharges => "Amount Applied to Late Charges",
             Self::AmountAppliedToBuydown => "Amount Applied to Buydown",
             Self::AmountAppliedToMiscFees => "Amount Applied to Misc. Fees",
-            Self::AmountAppliedToDeferredInterestDetail => "Amount Applied to Deferred Interest Detail",
+            Self::AmountAppliedToDeferredInterestDetail => {
+                "Amount Applied to Deferred Interest Detail"
+            }
             Self::AmountAppliedToServiceCharge => "Amount Applied to Service Charge",
             Self::LoanDisbursement => "Loan Disbursement",
             Self::ContainsNonMonetaryInformation => "Contains Non-monetary Information",
@@ -2884,1006 +2930,1006 @@ impl TypeCode {
 /// instead of a string-comparison chain, since every defined code is a
 /// zero-padded 3-digit number in `000..=999`.
 const TYPE_CODE_TABLE: [TypeCode; 1000] = [
-    TypeCode::Unknown, // 000
-    TypeCode::Unknown, // 001
-    TypeCode::Unknown, // 002
-    TypeCode::Unknown, // 003
-    TypeCode::Unknown, // 004
-    TypeCode::Unknown, // 005
-    TypeCode::Unknown, // 006
-    TypeCode::Unknown, // 007
-    TypeCode::Unknown, // 008
-    TypeCode::Unknown, // 009
-    TypeCode::OpeningLedger, // 010
-    TypeCode::AverageOpeningLedgerMtd, // 011
-    TypeCode::AverageOpeningLedgerYtd, // 012
-    TypeCode::Unknown, // 013
-    TypeCode::Unknown, // 014
-    TypeCode::ClosingLedger, // 015
-    TypeCode::Unknown, // 016
-    TypeCode::Unknown, // 017
-    TypeCode::Unknown, // 018
-    TypeCode::Unknown, // 019
-    TypeCode::AverageClosingLedgerMtd, // 020
-    TypeCode::AverageClosingLedgerPreviousMonth, // 021
-    TypeCode::AggregateBalanceAdjustments, // 022
-    TypeCode::Unknown, // 023
-    TypeCode::AverageClosingLedgerYtdPreviousMonth, // 024
-    TypeCode::AverageClosingLedgerYtd, // 025
-    TypeCode::Unknown, // 026
-    TypeCode::Unknown, // 027
-    TypeCode::Unknown, // 028
-    TypeCode::Unknown, // 029
-    TypeCode::CurrentLedger, // 030
-    TypeCode::Unknown, // 031
-    TypeCode::Unknown, // 032
-    TypeCode::Unknown, // 033
-    TypeCode::Unknown, // 034
-    TypeCode::Unknown, // 035
-    TypeCode::Unknown, // 036
-    TypeCode::AchNetPosition, // 037
-    TypeCode::Unknown, // 038
-    TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit, // 039
-    TypeCode::OpeningAvailable, // 040
-    TypeCode::AverageOpeningAvailableMtd, // 041
-    TypeCode::AverageOpeningAvailableYtd, // 042
-    TypeCode::AverageAvailablePreviousMonth, // 043
-    TypeCode::DisbursingOpeningAvailableBalance, // 044
-    TypeCode::ClosingAvailable, // 045
-    TypeCode::Unknown, // 046
-    TypeCode::Unknown, // 047
-    TypeCode::Unknown, // 048
-    TypeCode::Unknown, // 049
-    TypeCode::AverageClosingAvailableMtd, // 050
-    TypeCode::AverageClosingAvailableLastMonth, // 051
-    TypeCode::Unknown, // 052
-    TypeCode::Unknown, // 053
-    TypeCode::AverageClosingAvailableYtdLastMonth, // 054
-    TypeCode::AverageClosingAvailableYtd, // 055
-    TypeCode::LoanBalance, // 056
-    TypeCode::TotalInvestmentPosition, // 057
-    TypeCode::Unknown, // 058
-    TypeCode::CurrentAvailableCrsSupressed, // 059
-    TypeCode::CurrentAvailable, // 060
-    TypeCode::AverageCurrentAvailableMtd, // 061
-    TypeCode::AverageCurrentAvailableYtd, // 062
-    TypeCode::TotalFloat, // 063
-    TypeCode::Unknown, // 064
-    TypeCode::TargetBalance, // 065
-    TypeCode::AdjustedBalance, // 066
-    TypeCode::AdjustedBalanceMtd, // 067
-    TypeCode::AdjustedBalanceYtd, // 068
-    TypeCode::Unknown, // 069
-    TypeCode::N0DayFloat, // 070
-    TypeCode::Unknown, // 071
-    TypeCode::N1DayFloat, // 072
-    TypeCode::FloatAdjustmentNa, // 073
-    TypeCode::N2OrMoreDaysFloat, // 074
-    TypeCode::N3OrMoreDaysFloat, // 075
-    TypeCode::AdjustmentToBalances, // 076
-    TypeCode::AverageAdjustmentToBalancesMtd, // 077
-    TypeCode::AverageAdjustmentToBalancesYtd, // 078
-    TypeCode::N4DayFloat, // 079
-    TypeCode::N5DayFloat, // 080
-    TypeCode::N6DayFloat, // 081
-    TypeCode::Average1DayFloatMtd, // 082
-    TypeCode::Average1DayFloatYtd, // 083
-    TypeCode::Average2DayFloatMtd, // 084
-    TypeCode::Average2DayFloatYtd, // 085
-    TypeCode::TransferCalculation, // 086
-    TypeCode::Unknown, // 087
-    TypeCode::Unknown, // 088
-    TypeCode::Unknown, // 089
-    TypeCode::Unknown, // 090
-    TypeCode::Unknown, // 091
-    TypeCode::Unknown, // 092
-    TypeCode::Unknown, // 093
-    TypeCode::Unknown, // 094
-    TypeCode::Unknown, // 095
-    TypeCode::Unknown, // 096
-    TypeCode::Unknown, // 097
-    TypeCode::Unknown, // 098
-    TypeCode::Unknown, // 099
-    TypeCode::TotalCredits, // 100
-    TypeCode::TotalCreditAmountMtd, // 101
-    TypeCode::Unknown, // 102
-    TypeCode::Unknown, // 103
-    TypeCode::Unknown, // 104
-    TypeCode::CreditsNotDetailed, // 105
-    TypeCode::DepositsSubjectToFloat, // 106
-    TypeCode::TotalAdjustmentCreditsYtd, // 107
-    TypeCode::CreditAnyType, // 108
-    TypeCode::CurrentDayTotalLockboxDeposits, // 109
-    TypeCode::TotalLockboxDeposits, // 110
-    TypeCode::Unknown, // 111
-    TypeCode::Unknown, // 112
-    TypeCode::Unknown, // 113
-    TypeCode::Unknown, // 114
-    TypeCode::LockboxDeposit, // 115
-    TypeCode::ItemInLockboxDeposit, // 116
-    TypeCode::Unknown, // 117
-    TypeCode::LockboxAdjustmentCredit, // 118
-    TypeCode::Unknown, // 119
-    TypeCode::EdiTransactionCreditCrSummary, // 120
-    TypeCode::EdiTransactionCreditCrDetail, // 121
-    TypeCode::EdibanxCreditReceived, // 122
-    TypeCode::EdibanxCreditReturn, // 123
-    TypeCode::Unknown, // 124
-    TypeCode::Unknown, // 125
-    TypeCode::Unknown, // 126
-    TypeCode::Unknown, // 127
-    TypeCode::Unknown, // 128
-    TypeCode::Unknown, // 129
-    TypeCode::TotalConcentrationCredits, // 130
-    TypeCode::TotalDtcCredits, // 131
-    TypeCode::Unknown, // 132
-    TypeCode::Unknown, // 133
-    TypeCode::Unknown, // 134
-    TypeCode::DtcConcentrationCredit, // 135
-    TypeCode::ItemInDtcDeposit, // 136
-    TypeCode::Unknown, // 137
-    TypeCode::Unknown, // 138
-    TypeCode::Unknown, // 139
-    TypeCode::TotalAchCredits, // 140
-    TypeCode::Unknown, // 141
-    TypeCode::AchCreditReceived, // 142
-    TypeCode::ItemInAchDeposit, // 143
-    TypeCode::Unknown, // 144
-    TypeCode::AchConcentrationCredit, // 145
-    TypeCode::TotalBankCardDeposits, // 146
-    TypeCode::IndividualBankCardDeposit, // 147
-    TypeCode::Unknown, // 148
-    TypeCode::Unknown, // 149
-    TypeCode::TotalPreauthorizedPaymentCredits, // 150
-    TypeCode::Unknown, // 151
-    TypeCode::Unknown, // 152
-    TypeCode::Unknown, // 153
-    TypeCode::Unknown, // 154
-    TypeCode::PreauthorizedDraftCredit, // 155
-    TypeCode::ItemInPacDeposit, // 156
-    TypeCode::Unknown, // 157
-    TypeCode::Unknown, // 158
-    TypeCode::Unknown, // 159
-    TypeCode::TotalAchDisbursingFundingCredits, // 160
-    TypeCode::Unknown, // 161
-    TypeCode::CorporateTradePaymentSettlementCr, // 162
-    TypeCode::CorporateTradePaymentCredits, // 163
-    TypeCode::CorporateTradePaymentCredit, // 164
-    TypeCode::PreauthorizedAchCredit, // 165
-    TypeCode::AchSettlementCr, // 166
-    TypeCode::AchSettlementCredits, // 167
-    TypeCode::AchReturnItemOrAdjustmentSettlementCr, // 168
-    TypeCode::MiscellaneousAchCredit, // 169
-    TypeCode::TotalOtherCheckDeposits, // 170
-    TypeCode::IndividualLoanDeposit, // 171
-    TypeCode::DepositCorrection, // 172
-    TypeCode::BankPreparedDeposit, // 173
-    TypeCode::OtherDeposit, // 174
-    TypeCode::CheckDepositPackage, // 175
-    TypeCode::RePresentedCheckDeposit, // 176
-    TypeCode::Unknown, // 177
-    TypeCode::ListPostCredits, // 178
-    TypeCode::Unknown, // 179
-    TypeCode::TotalLoanProceeds, // 180
-    TypeCode::Unknown, // 181
-    TypeCode::TotalBankPreparedDeposits, // 182
-    TypeCode::Unknown, // 183
-    TypeCode::DraftDeposit, // 184
-    TypeCode::TotalMiscellaneousDeposits, // 185
-    TypeCode::TotalCashLetterCredits, // 186
-    TypeCode::CashLetterCredit, // 187
-    TypeCode::TotalCashLetterAdjustments, // 188
-    TypeCode::CashLetterAdjustmentCr, // 189
-    TypeCode::TotalIncomingMoneyTransfers, // 190
-    TypeCode::IndividualIncomingInternalMoneyTransfer, // 191
-    TypeCode::Unknown, // 192
-    TypeCode::Unknown, // 193
-    TypeCode::Unknown, // 194
-    TypeCode::IncomingMoneyTransfer, // 195
-    TypeCode::MoneyTransferAdjustmentCr, // 196
-    TypeCode::Unknown, // 197
-    TypeCode::CompensationCr, // 198
-    TypeCode::Unknown, // 199
-    TypeCode::TotalAutomaticTransferCredits, // 200
-    TypeCode::IndividualAutomaticTransferCredit, // 201
-    TypeCode::BondOperationsCredit, // 202
-    TypeCode::Unknown, // 203
-    TypeCode::Unknown, // 204
-    TypeCode::TotalBookTransferCredits, // 205
-    TypeCode::BookTransferCredit, // 206
-    TypeCode::TotalInternationalMoneyTransferCredits, // 207
-    TypeCode::IndividualInternationalMoneyTransferCredit, // 208
-    TypeCode::Unknown, // 209
-    TypeCode::TotalInternationalCredits, // 210
-    TypeCode::Unknown, // 211
-    TypeCode::ForeignLetterOfCredit, // 212
-    TypeCode::LetterOfCreditCr, // 213
-    TypeCode::ForeignExchangeOfCredit, // 214
-    TypeCode::TotalLettersOfCreditCr, // 215
-    TypeCode::ForeignRemittanceCredit, // 216
-    TypeCode::Unknown, // 217
-    TypeCode::ForeignCollectionCredit, // 218
-    TypeCode::Unknown, // 219
-    TypeCode::Unknown, // 220
-    TypeCode::ForeignCheckPurchase, // 221
-    TypeCode::ForeignChecksDeposited, // 222
-    TypeCode::Unknown, // 223
-    TypeCode::CommissionCr, // 224
-    TypeCode::Unknown, // 225
-    TypeCode::InternationalMoneyMarketTradingCr, // 226
-    TypeCode::StandingOrderCr, // 227
-    TypeCode::Unknown, // 228
-    TypeCode::MiscellaneousInternationalCredit, // 229
-    TypeCode::TotalSecurityCredits, // 230
-    TypeCode::TotalCollectionCredits, // 231
-    TypeCode::SaleOfDebtSecurity, // 232
-    TypeCode::SecuritiesSold, // 233
-    TypeCode::SaleOfEquitySecurity, // 234
-    TypeCode::MaturedReverseRepurchaseOrder, // 235
-    TypeCode::MaturityOfDebtSecurity, // 236
-    TypeCode::IndividualCollectionCredit, // 237
-    TypeCode::CollectionOfDividends, // 238
-    TypeCode::TotalBankersAcceptanceCredits, // 239
-    TypeCode::CouponCollectionsBanks, // 240
-    TypeCode::BankersAcceptancesCr, // 241
-    TypeCode::CollectionOfInterestIncome, // 242
-    TypeCode::MaturedFedFundsPurchased, // 243
-    TypeCode::InterestMaturedPrincipalPaymentCr, // 244
-    TypeCode::MonthlyDividends, // 245
-    TypeCode::CommercialPaperCr, // 246
-    TypeCode::CapitalChangeCr, // 247
-    TypeCode::SavingsBondsSalesAdjustmentCr, // 248
-    TypeCode::MiscellaneousSecurityCredit, // 249
-    TypeCode::TotalChecksPostedAndReturned, // 250
-    TypeCode::TotalDebitReversals, // 251
-    TypeCode::DebitReversal, // 252
-    TypeCode::Unknown, // 253
-    TypeCode::PostingErrorCorrectionCredit, // 254
-    TypeCode::CheckPostedAndReturned, // 255
-    TypeCode::TotalAchReturnItemsCr, // 256
-    TypeCode::IndividualAchReturnItemCr, // 257
-    TypeCode::AchReversalCredit, // 258
-    TypeCode::Unknown, // 259
-    TypeCode::TotalRejectedCredits, // 260
-    TypeCode::IndividualRejectedCredit, // 261
-    TypeCode::Unknown, // 262
-    TypeCode::OverdraftCr, // 263
-    TypeCode::Unknown, // 264
-    TypeCode::Unknown, // 265
-    TypeCode::ReturnItemCr, // 266
-    TypeCode::Unknown, // 267
-    TypeCode::ReturnItemAdjustmentCr, // 268
-    TypeCode::Unknown, // 269
-    TypeCode::TotalZbaCredits, // 270
-    TypeCode::NetZeroBalanceAmount, // 271
-    TypeCode::Unknown, // 272
-    TypeCode::Unknown, // 273
-    TypeCode::CumulativeZbaOrDisbursementCredits, // 274
-    TypeCode::ZbaCredit, // 275
-    TypeCode::ZbaFloatAdjustment, // 276
-    TypeCode::ZbaCreditTransfer, // 277
-    TypeCode::ZbaCreditAdjustment, // 278
-    TypeCode::Unknown, // 279
-    TypeCode::TotalControlledDisbursingCredits, // 280
-    TypeCode::IndividualControlledDisbursingCredit, // 281
-    TypeCode::Unknown, // 282
-    TypeCode::Unknown, // 283
-    TypeCode::Unknown, // 284
-    TypeCode::TotalDtcDisbursingCredits, // 285
-    TypeCode::IndividualDtcDisbursingCredit, // 286
-    TypeCode::Unknown, // 287
-    TypeCode::Unknown, // 288
-    TypeCode::Unknown, // 289
-    TypeCode::Unknown, // 290
-    TypeCode::Unknown, // 291
-    TypeCode::Unknown, // 292
-    TypeCode::Unknown, // 293
-    TypeCode::TotalAtmCredits, // 294
-    TypeCode::AtmCredit, // 295
-    TypeCode::Unknown, // 296
-    TypeCode::Unknown, // 297
-    TypeCode::Unknown, // 298
-    TypeCode::Unknown, // 299
-    TypeCode::Unknown, // 300
-    TypeCode::CommercialDeposit, // 301
-    TypeCode::CorrespondentBankDeposit, // 302
-    TypeCode::TotalWireTransfersInFf, // 303
-    TypeCode::TotalWireTransfersInChf, // 304
-    TypeCode::TotalFedFundsSold, // 305
-    TypeCode::FedFundsSold, // 306
-    TypeCode::TotalTrustCredits, // 307
-    TypeCode::TrustCredit, // 308
-    TypeCode::TotalValueDatedFunds, // 309
-    TypeCode::TotalCommercialDeposits, // 310
-    TypeCode::Unknown, // 311
-    TypeCode::Unknown, // 312
-    TypeCode::Unknown, // 313
-    TypeCode::Unknown, // 314
-    TypeCode::TotalInternationalCreditsFf, // 315
-    TypeCode::TotalInternationalCreditsChf, // 316
-    TypeCode::Unknown, // 317
-    TypeCode::TotalForeignCheckPurchased, // 318
-    TypeCode::LateDeposit, // 319
-    TypeCode::TotalSecuritiesSoldFf, // 320
-    TypeCode::TotalSecuritiesSoldChf, // 321
-    TypeCode::Unknown, // 322
-    TypeCode::Unknown, // 323
-    TypeCode::TotalSecuritiesMaturedFf, // 324
-    TypeCode::TotalSecuritiesMaturedChf, // 325
-    TypeCode::TotalSecuritiesInterest, // 326
-    TypeCode::TotalSecuritiesMatured, // 327
-    TypeCode::TotalSecuritiesInterestFf, // 328
-    TypeCode::TotalSecuritiesInterestChf, // 329
-    TypeCode::TotalEscrowCredits, // 330
-    TypeCode::IndividualEscrowCredit, // 331
-    TypeCode::TotalMiscellaneousSecuritiesCreditsFf, // 332
-    TypeCode::Unknown, // 333
-    TypeCode::Unknown, // 334
-    TypeCode::Unknown, // 335
-    TypeCode::TotalMiscellaneousSecuritiesCreditsChf, // 336
-    TypeCode::Unknown, // 337
-    TypeCode::TotalSecuritiesSold, // 338
-    TypeCode::Unknown, // 339
-    TypeCode::TotalBrokerDeposits, // 340
-    TypeCode::TotalBrokerDepositsFf, // 341
-    TypeCode::BrokerDeposit, // 342
-    TypeCode::TotalBrokerDepositsChf, // 343
-    TypeCode::IndividualBackValueCredit, // 344
-    TypeCode::ItemInBrokersDeposit, // 345
-    TypeCode::SweepInterestIncome, // 346
-    TypeCode::SweepPrincipalSell, // 347
-    TypeCode::FuturesCredit, // 348
-    TypeCode::PrincipalPaymentsCredit, // 349
-    TypeCode::InvestmentSold, // 350
-    TypeCode::IndividualInvestmentSold, // 351
-    TypeCode::TotalCashCenterCredits, // 352
-    TypeCode::CashCenterCredit, // 353
-    TypeCode::InterestCredit, // 354
-    TypeCode::InvestmentInterest, // 355
-    TypeCode::TotalCreditAdjustment, // 356
-    TypeCode::CreditAdjustment, // 357
-    TypeCode::YtdAdjustmentCredit, // 358
-    TypeCode::InterestAdjustmentCredit, // 359
+    TypeCode::Unknown,                                       // 000
+    TypeCode::Unknown,                                       // 001
+    TypeCode::Unknown,                                       // 002
+    TypeCode::Unknown,                                       // 003
+    TypeCode::Unknown,                                       // 004
+    TypeCode::Unknown,                                       // 005
+    TypeCode::Unknown,                                       // 006
+    TypeCode::Unknown,                                       // 007
+    TypeCode::Unknown,                                       // 008
+    TypeCode::Unknown,                                       // 009
+    TypeCode::OpeningLedger,                                 // 010
+    TypeCode::AverageOpeningLedgerMtd,                       // 011
+    TypeCode::AverageOpeningLedgerYtd,                       // 012
+    TypeCode::Unknown,                                       // 013
+    TypeCode::Unknown,                                       // 014
+    TypeCode::ClosingLedger,                                 // 015
+    TypeCode::Unknown,                                       // 016
+    TypeCode::Unknown,                                       // 017
+    TypeCode::Unknown,                                       // 018
+    TypeCode::Unknown,                                       // 019
+    TypeCode::AverageClosingLedgerMtd,                       // 020
+    TypeCode::AverageClosingLedgerPreviousMonth,             // 021
+    TypeCode::AggregateBalanceAdjustments,                   // 022
+    TypeCode::Unknown,                                       // 023
+    TypeCode::AverageClosingLedgerYtdPreviousMonth,          // 024
+    TypeCode::AverageClosingLedgerYtd,                       // 025
+    TypeCode::Unknown,                                       // 026
+    TypeCode::Unknown,                                       // 027
+    TypeCode::Unknown,                                       // 028
+    TypeCode::Unknown,                                       // 029
+    TypeCode::CurrentLedger,                                 // 030
+    TypeCode::Unknown,                                       // 031
+    TypeCode::Unknown,                                       // 032
+    TypeCode::Unknown,                                       // 033
+    TypeCode::Unknown,                                       // 034
+    TypeCode::Unknown,                                       // 035
+    TypeCode::Unknown,                                       // 036
+    TypeCode::AchNetPosition,                                // 037
+    TypeCode::Unknown,                                       // 038
+    TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit,     // 039
+    TypeCode::OpeningAvailable,                              // 040
+    TypeCode::AverageOpeningAvailableMtd,                    // 041
+    TypeCode::AverageOpeningAvailableYtd,                    // 042
+    TypeCode::AverageAvailablePreviousMonth,                 // 043
+    TypeCode::DisbursingOpeningAvailableBalance,             // 044
+    TypeCode::ClosingAvailable,                              // 045
+    TypeCode::Unknown,                                       // 046
+    TypeCode::Unknown,                                       // 047
+    TypeCode::Unknown,                                       // 048
+    TypeCode::Unknown,                                       // 049
+    TypeCode::AverageClosingAvailableMtd,                    // 050
+    TypeCode::AverageClosingAvailableLastMonth,              // 051
+    TypeCode::Unknown,                                       // 052
+    TypeCode::Unknown,                                       // 053
+    TypeCode::AverageClosingAvailableYtdLastMonth,           // 054
+    TypeCode::AverageClosingAvailableYtd,                    // 055
+    TypeCode::LoanBalance,                                   // 056
+    TypeCode::TotalInvestmentPosition,                       // 057
+    TypeCode::Unknown,                                       // 058
+    TypeCode::CurrentAvailableCrsSupressed,                  // 059
+    TypeCode::CurrentAvailable,                              // 060
+    TypeCode::AverageCurrentAvailableMtd,                    // 061
+    TypeCode::AverageCurrentAvailableYtd,                    // 062
+    TypeCode::TotalFloat,                                    // 063
+    TypeCode::Unknown,                                       // 064
+    TypeCode::TargetBalance,                                 // 065
+    TypeCode::AdjustedBalance,                               // 066
+    TypeCode::AdjustedBalanceMtd,                            // 067
+    TypeCode::AdjustedBalanceYtd,                            // 068
+    TypeCode::Unknown,                                       // 069
+    TypeCode::N0DayFloat,                                    // 070
+    TypeCode::Unknown,                                       // 071
+    TypeCode::N1DayFloat,                                    // 072
+    TypeCode::FloatAdjustmentNa,                             // 073
+    TypeCode::N2OrMoreDaysFloat,                             // 074
+    TypeCode::N3OrMoreDaysFloat,                             // 075
+    TypeCode::AdjustmentToBalances,                          // 076
+    TypeCode::AverageAdjustmentToBalancesMtd,                // 077
+    TypeCode::AverageAdjustmentToBalancesYtd,                // 078
+    TypeCode::N4DayFloat,                                    // 079
+    TypeCode::N5DayFloat,                                    // 080
+    TypeCode::N6DayFloat,                                    // 081
+    TypeCode::Average1DayFloatMtd,                           // 082
+    TypeCode::Average1DayFloatYtd,                           // 083
+    TypeCode::Average2DayFloatMtd,                           // 084
+    TypeCode::Average2DayFloatYtd,                           // 085
+    TypeCode::TransferCalculation,                           // 086
+    TypeCode::Unknown,                                       // 087
+    TypeCode::Unknown,                                       // 088
+    TypeCode::Unknown,                                       // 089
+    TypeCode::Unknown,                                       // 090
+    TypeCode::Unknown,                                       // 091
+    TypeCode::Unknown,                                       // 092
+    TypeCode::Unknown,                                       // 093
+    TypeCode::Unknown,                                       // 094
+    TypeCode::Unknown,                                       // 095
+    TypeCode::Unknown,                                       // 096
+    TypeCode::Unknown,                                       // 097
+    TypeCode::Unknown,                                       // 098
+    TypeCode::Unknown,                                       // 099
+    TypeCode::TotalCredits,                                  // 100
+    TypeCode::TotalCreditAmountMtd,                          // 101
+    TypeCode::Unknown,                                       // 102
+    TypeCode::Unknown,                                       // 103
+    TypeCode::Unknown,                                       // 104
+    TypeCode::CreditsNotDetailed,                            // 105
+    TypeCode::DepositsSubjectToFloat,                        // 106
+    TypeCode::TotalAdjustmentCreditsYtd,                     // 107
+    TypeCode::CreditAnyType,                                 // 108
+    TypeCode::CurrentDayTotalLockboxDeposits,                // 109
+    TypeCode::TotalLockboxDeposits,                          // 110
+    TypeCode::Unknown,                                       // 111
+    TypeCode::Unknown,                                       // 112
+    TypeCode::Unknown,                                       // 113
+    TypeCode::Unknown,                                       // 114
+    TypeCode::LockboxDeposit,                                // 115
+    TypeCode::ItemInLockboxDeposit,                          // 116
+    TypeCode::Unknown,                                       // 117
+    TypeCode::LockboxAdjustmentCredit,                       // 118
+    TypeCode::Unknown,                                       // 119
+    TypeCode::EdiTransactionCreditCrSummary,                 // 120
+    TypeCode::EdiTransactionCreditCrDetail,                  // 121
+    TypeCode::EdibanxCreditReceived,                         // 122
+    TypeCode::EdibanxCreditReturn,                           // 123
+    TypeCode::Unknown,                                       // 124
+    TypeCode::Unknown,                                       // 125
+    TypeCode::Unknown,                                       // 126
+    TypeCode::Unknown,                                       // 127
+    TypeCode::Unknown,                                       // 128
+    TypeCode::Unknown,                                       // 129
+    TypeCode::TotalConcentrationCredits,                     // 130
+    TypeCode::TotalDtcCredits,                               // 131
+    TypeCode::Unknown,                                       // 132
+    TypeCode::Unknown,                                       // 133
+    TypeCode::Unknown,                                       // 134
+    TypeCode::DtcConcentrationCredit,                        // 135
+    TypeCode::ItemInDtcDeposit,                              // 136
+    TypeCode::Unknown,                                       // 137
+    TypeCode::Unknown,                                       // 138
+    TypeCode::Unknown,                                       // 139
+    TypeCode::TotalAchCredits,                               // 140
+    TypeCode::Unknown,                                       // 141
+    TypeCode::AchCreditReceived,                             // 142
+    TypeCode::ItemInAchDeposit,                              // 143
+    TypeCode::Unknown,                                       // 144
+    TypeCode::AchConcentrationCredit,                        // 145
+    TypeCode::TotalBankCardDeposits,                         // 146
+    TypeCode::IndividualBankCardDeposit,                     // 147
+    TypeCode::Unknown,                                       // 148
+    TypeCode::Unknown,                                       // 149
+    TypeCode::TotalPreauthorizedPaymentCredits,              // 150
+    TypeCode::Unknown,                                       // 151
+    TypeCode::Unknown,                                       // 152
+    TypeCode::Unknown,                                       // 153
+    TypeCode::Unknown,                                       // 154
+    TypeCode::PreauthorizedDraftCredit,                      // 155
+    TypeCode::ItemInPacDeposit,                              // 156
+    TypeCode::Unknown,                                       // 157
+    TypeCode::Unknown,                                       // 158
+    TypeCode::Unknown,                                       // 159
+    TypeCode::TotalAchDisbursingFundingCredits,              // 160
+    TypeCode::Unknown,                                       // 161
+    TypeCode::CorporateTradePaymentSettlementCr,             // 162
+    TypeCode::CorporateTradePaymentCredits,                  // 163
+    TypeCode::CorporateTradePaymentCredit,                   // 164
+    TypeCode::PreauthorizedAchCredit,                        // 165
+    TypeCode::AchSettlementCr,                               // 166
+    TypeCode::AchSettlementCredits,                          // 167
+    TypeCode::AchReturnItemOrAdjustmentSettlementCr,         // 168
+    TypeCode::MiscellaneousAchCredit,                        // 169
+    TypeCode::TotalOtherCheckDeposits,                       // 170
+    TypeCode::IndividualLoanDeposit,                         // 171
+    TypeCode::DepositCorrection,                             // 172
+    TypeCode::BankPreparedDeposit,                           // 173
+    TypeCode::OtherDeposit,                                  // 174
+    TypeCode::CheckDepositPackage,                           // 175
+    TypeCode::RePresentedCheckDeposit,                       // 176
+    TypeCode::Unknown,                                       // 177
+    TypeCode::ListPostCredits,                               // 178
+    TypeCode::Unknown,                                       // 179
+    TypeCode::TotalLoanProceeds,                             // 180
+    TypeCode::Unknown,                                       // 181
+    TypeCode::TotalBankPreparedDeposits,                     // 182
+    TypeCode::Unknown,                                       // 183
+    TypeCode::DraftDeposit,                                  // 184
+    TypeCode::TotalMiscellaneousDeposits,                    // 185
+    TypeCode::TotalCashLetterCredits,                        // 186
+    TypeCode::CashLetterCredit,                              // 187
+    TypeCode::TotalCashLetterAdjustments,                    // 188
+    TypeCode::CashLetterAdjustmentCr,                        // 189
+    TypeCode::TotalIncomingMoneyTransfers,                   // 190
+    TypeCode::IndividualIncomingInternalMoneyTransfer,       // 191
+    TypeCode::Unknown,                                       // 192
+    TypeCode::Unknown,                                       // 193
+    TypeCode::Unknown,                                       // 194
+    TypeCode::IncomingMoneyTransfer,                         // 195
+    TypeCode::MoneyTransferAdjustmentCr,                     // 196
+    TypeCode::Unknown,                                       // 197
+    TypeCode::CompensationCr,                                // 198
+    TypeCode::Unknown,                                       // 199
+    TypeCode::TotalAutomaticTransferCredits,                 // 200
+    TypeCode::IndividualAutomaticTransferCredit,             // 201
+    TypeCode::BondOperationsCredit,                          // 202
+    TypeCode::Unknown,                                       // 203
+    TypeCode::Unknown,                                       // 204
+    TypeCode::TotalBookTransferCredits,                      // 205
+    TypeCode::BookTransferCredit,                            // 206
+    TypeCode::TotalInternationalMoneyTransferCredits,        // 207
+    TypeCode::IndividualInternationalMoneyTransferCredit,    // 208
+    TypeCode::Unknown,                                       // 209
+    TypeCode::TotalInternationalCredits,                     // 210
+    TypeCode::Unknown,                                       // 211
+    TypeCode::ForeignLetterOfCredit,                         // 212
+    TypeCode::LetterOfCreditCr,                              // 213
+    TypeCode::ForeignExchangeOfCredit,                       // 214
+    TypeCode::TotalLettersOfCreditCr,                        // 215
+    TypeCode::ForeignRemittanceCredit,                       // 216
+    TypeCode::Unknown,                                       // 217
+    TypeCode::ForeignCollectionCredit,                       // 218
+    TypeCode::Unknown,                                       // 219
+    TypeCode::Unknown,                                       // 220
+    TypeCode::ForeignCheckPurchase,                          // 221
+    TypeCode::ForeignChecksDeposited,                        // 222
+    TypeCode::Unknown,                                       // 223
+    TypeCode::CommissionCr,                                  // 224
+    TypeCode::Unknown,                                       // 225
+    TypeCode::InternationalMoneyMarketTradingCr,             // 226
+    TypeCode::StandingOrderCr,                               // 227
+    TypeCode::Unknown,                                       // 228
+    TypeCode::MiscellaneousInternationalCredit,              // 229
+    TypeCode::TotalSecurityCredits,                          // 230
+    TypeCode::TotalCollectionCredits,                        // 231
+    TypeCode::SaleOfDebtSecurity,                            // 232
+    TypeCode::SecuritiesSold,                                // 233
+    TypeCode::SaleOfEquitySecurity,                          // 234
+    TypeCode::MaturedReverseRepurchaseOrder,                 // 235
+    TypeCode::MaturityOfDebtSecurity,                        // 236
+    TypeCode::IndividualCollectionCredit,                    // 237
+    TypeCode::CollectionOfDividends,                         // 238
+    TypeCode::TotalBankersAcceptanceCredits,                 // 239
+    TypeCode::CouponCollectionsBanks,                        // 240
+    TypeCode::BankersAcceptancesCr,                          // 241
+    TypeCode::CollectionOfInterestIncome,                    // 242
+    TypeCode::MaturedFedFundsPurchased,                      // 243
+    TypeCode::InterestMaturedPrincipalPaymentCr,             // 244
+    TypeCode::MonthlyDividends,                              // 245
+    TypeCode::CommercialPaperCr,                             // 246
+    TypeCode::CapitalChangeCr,                               // 247
+    TypeCode::SavingsBondsSalesAdjustmentCr,                 // 248
+    TypeCode::MiscellaneousSecurityCredit,                   // 249
+    TypeCode::TotalChecksPostedAndReturned,                  // 250
+    TypeCode::TotalDebitReversals,                           // 251
+    TypeCode::DebitReversal,                                 // 252
+    TypeCode::Unknown,                                       // 253
+    TypeCode::PostingErrorCorrectionCredit,                  // 254
+    TypeCode::CheckPostedAndReturned,                        // 255
+    TypeCode::TotalAchReturnItemsCr,                         // 256
+    TypeCode::IndividualAchReturnItemCr,                     // 257
+    TypeCode::AchReversalCredit,                             // 258
+    TypeCode::Unknown,                                       // 259
+    TypeCode::TotalRejectedCredits,                          // 260
+    TypeCode::IndividualRejectedCredit,                      // 261
+    TypeCode::Unknown,                                       // 262
+    TypeCode::OverdraftCr,                                   // 263
+    TypeCode::Unknown,                                       // 264
+    TypeCode::Unknown,                                       // 265
+    TypeCode::ReturnItemCr,                                  // 266
+    TypeCode::Unknown,                                       // 267
+    TypeCode::ReturnItemAdjustmentCr,                        // 268
+    TypeCode::Unknown,                                       // 269
+    TypeCode::TotalZbaCredits,                               // 270
+    TypeCode::NetZeroBalanceAmount,                          // 271
+    TypeCode::Unknown,                                       // 272
+    TypeCode::Unknown,                                       // 273
+    TypeCode::CumulativeZbaOrDisbursementCredits,            // 274
+    TypeCode::ZbaCredit,                                     // 275
+    TypeCode::ZbaFloatAdjustment,                            // 276
+    TypeCode::ZbaCreditTransfer,                             // 277
+    TypeCode::ZbaCreditAdjustment,                           // 278
+    TypeCode::Unknown,                                       // 279
+    TypeCode::TotalControlledDisbursingCredits,              // 280
+    TypeCode::IndividualControlledDisbursingCredit,          // 281
+    TypeCode::Unknown,                                       // 282
+    TypeCode::Unknown,                                       // 283
+    TypeCode::Unknown,                                       // 284
+    TypeCode::TotalDtcDisbursingCredits,                     // 285
+    TypeCode::IndividualDtcDisbursingCredit,                 // 286
+    TypeCode::Unknown,                                       // 287
+    TypeCode::Unknown,                                       // 288
+    TypeCode::Unknown,                                       // 289
+    TypeCode::Unknown,                                       // 290
+    TypeCode::Unknown,                                       // 291
+    TypeCode::Unknown,                                       // 292
+    TypeCode::Unknown,                                       // 293
+    TypeCode::TotalAtmCredits,                               // 294
+    TypeCode::AtmCredit,                                     // 295
+    TypeCode::Unknown,                                       // 296
+    TypeCode::Unknown,                                       // 297
+    TypeCode::Unknown,                                       // 298
+    TypeCode::Unknown,                                       // 299
+    TypeCode::Unknown,                                       // 300
+    TypeCode::CommercialDeposit,                             // 301
+    TypeCode::CorrespondentBankDeposit,                      // 302
+    TypeCode::TotalWireTransfersInFf,                        // 303
+    TypeCode::TotalWireTransfersInChf,                       // 304
+    TypeCode::TotalFedFundsSold,                             // 305
+    TypeCode::FedFundsSold,                                  // 306
+    TypeCode::TotalTrustCredits,                             // 307
+    TypeCode::TrustCredit,                                   // 308
+    TypeCode::TotalValueDatedFunds,                          // 309
+    TypeCode::TotalCommercialDeposits,                       // 310
+    TypeCode::Unknown,                                       // 311
+    TypeCode::Unknown,                                       // 312
+    TypeCode::Unknown,                                       // 313
+    TypeCode::Unknown,                                       // 314
+    TypeCode::TotalInternationalCreditsFf,                   // 315
+    TypeCode::TotalInternationalCreditsChf,                  // 316
+    TypeCode::Unknown,                                       // 317
+    TypeCode::TotalForeignCheckPurchased,                    // 318
+    TypeCode::LateDeposit,                                   // 319
+    TypeCode::TotalSecuritiesSoldFf,                         // 320
+    TypeCode::TotalSecuritiesSoldChf,                        // 321
+    TypeCode::Unknown,                                       // 322
+    TypeCode::Unknown,                                       // 323
+    TypeCode::TotalSecuritiesMaturedFf,                      // 324
+    TypeCode::TotalSecuritiesMaturedChf,                     // 325
+    TypeCode::TotalSecuritiesInterest,                       // 326
+    TypeCode::TotalSecuritiesMatured,                        // 327
+    TypeCode::TotalSecuritiesInterestFf,                     // 328
+    TypeCode::TotalSecuritiesInterestChf,                    // 329
+    TypeCode::TotalEscrowCredits,                            // 330
+    TypeCode::IndividualEscrowCredit,                        // 331
+    TypeCode::TotalMiscellaneousSecuritiesCreditsFf,         // 332
+    TypeCode::Unknown,                                       // 333
+    TypeCode::Unknown,                                       // 334
+    TypeCode::Unknown,                                       // 335
+    TypeCode::TotalMiscellaneousSecuritiesCreditsChf,        // 336
+    TypeCode::Unknown,                                       // 337
+    TypeCode::TotalSecuritiesSold,                           // 338
+    TypeCode::Unknown,                                       // 339
+    TypeCode::TotalBrokerDeposits,                           // 340
+    TypeCode::TotalBrokerDepositsFf,                         // 341
+    TypeCode::BrokerDeposit,                                 // 342
+    TypeCode::TotalBrokerDepositsChf,                        // 343
+    TypeCode::IndividualBackValueCredit,                     // 344
+    TypeCode::ItemInBrokersDeposit,                          // 345
+    TypeCode::SweepInterestIncome,                           // 346
+    TypeCode::SweepPrincipalSell,                            // 347
+    TypeCode::FuturesCredit,                                 // 348
+    TypeCode::PrincipalPaymentsCredit,                       // 349
+    TypeCode::InvestmentSold,                                // 350
+    TypeCode::IndividualInvestmentSold,                      // 351
+    TypeCode::TotalCashCenterCredits,                        // 352
+    TypeCode::CashCenterCredit,                              // 353
+    TypeCode::InterestCredit,                                // 354
+    TypeCode::InvestmentInterest,                            // 355
+    TypeCode::TotalCreditAdjustment,                         // 356
+    TypeCode::CreditAdjustment,                              // 357
+    TypeCode::YtdAdjustmentCredit,                           // 358
+    TypeCode::InterestAdjustmentCredit,                      // 359
     TypeCode::TotalCreditsLessWireTransferAndReturnedChecks, // 360
-    TypeCode::GrandTotalCreditsLessGrandTotalDebits, // 361
-    TypeCode::CorrespondentCollection, // 362
-    TypeCode::CorrespondentCollectionAdjustmentCr, // 363
-    TypeCode::LoanParticipationCr, // 364
-    TypeCode::Unknown, // 365
-    TypeCode::CurrencyAndCoinDeposited, // 366
-    TypeCode::FoodStampLetterCr, // 367
-    TypeCode::FoodStampAdjustmentCr, // 368
-    TypeCode::ClearingSettlementCredit, // 369
-    TypeCode::TotalBackValueCredits, // 370
-    TypeCode::Unknown, // 371
-    TypeCode::BackValueAdjustmentCr, // 372
-    TypeCode::CustomerPayrollCr, // 373
-    TypeCode::FrbStatementRecapCr, // 374
-    TypeCode::Unknown, // 375
-    TypeCode::SavingsBondLetterOrAdjustmentCr, // 376
-    TypeCode::TreasuryTaxAndLoanCredit, // 377
-    TypeCode::TransferOfTreasuryCredit, // 378
-    TypeCode::FrbGovernmentChecksCashLetterCredit, // 379
-    TypeCode::Unknown, // 380
-    TypeCode::FrbGovernmentCheckAdjustmentCr, // 381
-    TypeCode::FrbPostalMoneyOrderCredit, // 382
-    TypeCode::FrbPostalMoneyOrderAdjustmentCr, // 383
-    TypeCode::FrbCashLetterAutoChargeCredit, // 384
-    TypeCode::TotalUniversalCredits, // 385
-    TypeCode::FrbCashLetterAutoChargeAdjustmentCr, // 386
-    TypeCode::FrbFineSortCashLetterCredit, // 387
-    TypeCode::FrbFineSortAdjustmentCr, // 388
-    TypeCode::TotalFreightPaymentCredits, // 389
-    TypeCode::TotalMiscellaneousCredits, // 390
-    TypeCode::UniversalCredit, // 391
-    TypeCode::FreightPaymentCredit, // 392
-    TypeCode::ItemizedCreditOver10, // 393
-    TypeCode::CumulativeCredits, // 394
-    TypeCode::CheckReversal, // 395
-    TypeCode::Unknown, // 396
-    TypeCode::FloatAdjustmentCr, // 397
-    TypeCode::MiscellaneousFeeRefund, // 398
-    TypeCode::MiscellaneousCredit, // 399
-    TypeCode::TotalDebits, // 400
-    TypeCode::TotalDebitAmountMtd, // 401
-    TypeCode::Unknown, // 402
-    TypeCode::TodaySTotalDebits, // 403
-    TypeCode::Unknown, // 404
-    TypeCode::TotalDebitLessWireTransfersAndChargeBacks, // 405
-    TypeCode::DebitsNotDetailed, // 406
-    TypeCode::Unknown, // 407
-    TypeCode::FloatAdjustmentDb, // 408
-    TypeCode::DebitAnyType, // 409
-    TypeCode::TotalYtdAdjustment, // 410
-    TypeCode::Unknown, // 411
-    TypeCode::TotalDebitsExcludingReturnedItems, // 412
-    TypeCode::Unknown, // 413
-    TypeCode::Unknown, // 414
-    TypeCode::LockboxDebit, // 415
-    TypeCode::TotalLockboxDebits, // 416
-    TypeCode::Unknown, // 417
-    TypeCode::Unknown, // 418
-    TypeCode::Unknown, // 419
-    TypeCode::EdiTransactionDebits, // 420
-    TypeCode::EdiTransactionDebit, // 421
-    TypeCode::EdibanxSettlementDebit, // 422
-    TypeCode::EdibanxReturnItemDebit, // 423
-    TypeCode::Unknown, // 424
-    TypeCode::Unknown, // 425
-    TypeCode::Unknown, // 426
-    TypeCode::Unknown, // 427
-    TypeCode::Unknown, // 428
-    TypeCode::Unknown, // 429
-    TypeCode::TotalPayableThroughDrafts, // 430
-    TypeCode::Unknown, // 431
-    TypeCode::Unknown, // 432
-    TypeCode::Unknown, // 433
-    TypeCode::Unknown, // 434
-    TypeCode::PayableThroughDraft, // 435
-    TypeCode::Unknown, // 436
-    TypeCode::Unknown, // 437
-    TypeCode::Unknown, // 438
-    TypeCode::Unknown, // 439
-    TypeCode::Unknown, // 440
-    TypeCode::Unknown, // 441
-    TypeCode::Unknown, // 442
-    TypeCode::Unknown, // 443
-    TypeCode::Unknown, // 444
-    TypeCode::AchConcentrationDebit, // 445
-    TypeCode::TotalAchDisbursementFundingDebits, // 446
-    TypeCode::AchDisbursementFundingDebit, // 447
-    TypeCode::Unknown, // 448
-    TypeCode::Unknown, // 449
-    TypeCode::TotalAchDebits, // 450
-    TypeCode::AchDebitReceived, // 451
-    TypeCode::ItemInAchDisbursementOrDebit, // 452
-    TypeCode::Unknown, // 453
-    TypeCode::Unknown, // 454
-    TypeCode::PreauthorizedAchDebit, // 455
-    TypeCode::Unknown, // 456
-    TypeCode::Unknown, // 457
-    TypeCode::Unknown, // 458
-    TypeCode::Unknown, // 459
-    TypeCode::Unknown, // 460
-    TypeCode::Unknown, // 461
-    TypeCode::AccountHolderInitiatedAchDebit, // 462
-    TypeCode::CorporateTradePaymentDebits, // 463
-    TypeCode::CorporateTradePaymentDebit, // 464
-    TypeCode::CorporateTradePaymentSettlementDb, // 465
-    TypeCode::AchSettlementDb, // 466
-    TypeCode::AchSettlementDebits, // 467
-    TypeCode::AchReturnItemOrAdjustmentSettlementDb, // 468
-    TypeCode::MiscellaneousAchDebit, // 469
-    TypeCode::TotalCheckPaid, // 470
-    TypeCode::TotalCheckPaidCumulativeMtd, // 471
-    TypeCode::CumulativeChecksPaid, // 472
-    TypeCode::Unknown, // 473
-    TypeCode::CertifiedCheckDebit, // 474
-    TypeCode::CheckPaid, // 475
-    TypeCode::FederalReserveBankLetterDebit, // 476
-    TypeCode::BankOriginatedDebit, // 477
-    TypeCode::ListPostDebits, // 478
-    TypeCode::ListPostDebit, // 479
-    TypeCode::TotalLoanPayments, // 480
-    TypeCode::IndividualLoanPayment, // 481
-    TypeCode::TotalBankOriginatedDebits, // 482
-    TypeCode::Unknown, // 483
-    TypeCode::Draft, // 484
-    TypeCode::DtcDebit, // 485
-    TypeCode::TotalCashLetterDebits, // 486
-    TypeCode::CashLetterDebit, // 487
-    TypeCode::Unknown, // 488
-    TypeCode::CashLetterAdjustmentDb, // 489
-    TypeCode::TotalOutgoingMoneyTransfers, // 490
-    TypeCode::IndividualOutgoingInternalMoneyTransfer, // 491
-    TypeCode::Unknown, // 492
-    TypeCode::CustomerTerminalInitiatedMoneyTransfer, // 493
-    TypeCode::Unknown, // 494
-    TypeCode::OutgoingMoneyTransfer, // 495
-    TypeCode::MoneyTransferAdjustmentDb, // 496
-    TypeCode::Unknown, // 497
-    TypeCode::CompensationDb, // 498
-    TypeCode::Unknown, // 499
-    TypeCode::TotalAutomaticTransferDebits, // 500
-    TypeCode::IndividualAutomaticTransferDebit, // 501
-    TypeCode::BondOperationsDebit, // 502
-    TypeCode::Unknown, // 503
-    TypeCode::Unknown, // 504
-    TypeCode::TotalBookTransferDebits, // 505
-    TypeCode::BookTransferDebit, // 506
-    TypeCode::TotalInternationalMoneyTransferDebits, // 507
-    TypeCode::IndividualInternationalMoneyTransferDebits, // 508
-    TypeCode::Unknown, // 509
-    TypeCode::TotalInternationalDebits, // 510
-    TypeCode::Unknown, // 511
-    TypeCode::LetterOfCreditDebit, // 512
-    TypeCode::LetterOfCreditDb, // 513
-    TypeCode::ForeignExchangeDebit, // 514
-    TypeCode::TotalLettersOfCreditDb, // 515
-    TypeCode::ForeignRemittanceDebit, // 516
-    TypeCode::Unknown, // 517
-    TypeCode::ForeignCollectionDebit, // 518
-    TypeCode::Unknown, // 519
-    TypeCode::Unknown, // 520
-    TypeCode::Unknown, // 521
-    TypeCode::ForeignChecksPaid, // 522
-    TypeCode::Unknown, // 523
-    TypeCode::CommissionDb, // 524
-    TypeCode::Unknown, // 525
-    TypeCode::InternationalMoneyMarketTradingDb, // 526
-    TypeCode::StandingOrderDb, // 527
-    TypeCode::Unknown, // 528
-    TypeCode::MiscellaneousInternationalDebit, // 529
-    TypeCode::TotalSecurityDebits, // 530
-    TypeCode::SecuritiesPurchased, // 531
-    TypeCode::TotalAmountOfSecuritiesPurchased, // 532
-    TypeCode::SecurityCollectionDebit, // 533
-    TypeCode::TotalMiscellaneousSecuritiesDbFf, // 534
-    TypeCode::PurchaseOfEquitySecurities, // 535
-    TypeCode::TotalMiscellaneousSecuritiesDebitChf, // 536
-    TypeCode::TotalCollectionDebit, // 537
-    TypeCode::MaturedRepurchaseOrder, // 538
-    TypeCode::TotalBankersAcceptancesDebit, // 539
-    TypeCode::CouponCollectionDebit, // 540
-    TypeCode::BankersAcceptancesDb, // 541
-    TypeCode::PurchaseOfDebtSecurities, // 542
-    TypeCode::DomesticCollection, // 543
-    TypeCode::InterestMaturedPrincipalPaymentDb, // 544
-    TypeCode::Unknown, // 545
-    TypeCode::CommercialPaperDb, // 546
-    TypeCode::CapitalChangeDb, // 547
-    TypeCode::SavingsBondsSalesAdjustmentDb, // 548
-    TypeCode::MiscellaneousSecurityDebit, // 549
-    TypeCode::TotalDepositedItemsReturned, // 550
-    TypeCode::TotalCreditReversals, // 551
-    TypeCode::CreditReversal, // 552
-    TypeCode::Unknown, // 553
-    TypeCode::PostingErrorCorrectionDebit, // 554
-    TypeCode::DepositedItemReturned, // 555
-    TypeCode::TotalAchReturnItemsDb, // 556
-    TypeCode::IndividualAchReturnItemDb, // 557
-    TypeCode::AchReversalDebit, // 558
-    TypeCode::Unknown, // 559
-    TypeCode::TotalRejectedDebits, // 560
-    TypeCode::IndividualRejectedDebit, // 561
-    TypeCode::Unknown, // 562
-    TypeCode::OverdraftDb, // 563
-    TypeCode::OverdraftFee, // 564
-    TypeCode::Unknown, // 565
-    TypeCode::ReturnItemDb, // 566
-    TypeCode::ReturnItemFee, // 567
-    TypeCode::ReturnItemAdjustmentDb, // 568
-    TypeCode::Unknown, // 569
-    TypeCode::TotalZbaDebits, // 570
-    TypeCode::Unknown, // 571
-    TypeCode::Unknown, // 572
-    TypeCode::Unknown, // 573
-    TypeCode::CumulativeZbaDebits, // 574
-    TypeCode::ZbaDebit, // 575
-    TypeCode::Unknown, // 576
-    TypeCode::ZbaDebitTransfer, // 577
-    TypeCode::ZbaDebitAdjustment, // 578
-    TypeCode::Unknown, // 579
-    TypeCode::TotalControlledDisbursingDebits, // 580
-    TypeCode::IndividualControlledDisbursingDebit, // 581
-    TypeCode::Unknown, // 582
-    TypeCode::TotalDisbursingChecksPaidEarlyAmount, // 583
-    TypeCode::TotalDisbursingChecksPaidLaterAmount, // 584
-    TypeCode::DisbursingFundingRequirement, // 585
-    TypeCode::FrbPresentmentEstimateFedEstimate, // 586
-    TypeCode::LateDebitsAfterNotification, // 587
-    TypeCode::TotalDisbursingChecksPaidLastAmount, // 588
-    TypeCode::Unknown, // 589
-    TypeCode::TotalDtcDebits, // 590
-    TypeCode::Unknown, // 591
-    TypeCode::Unknown, // 592
-    TypeCode::Unknown, // 593
-    TypeCode::TotalAtmDebits, // 594
-    TypeCode::AtmDebit, // 595
-    TypeCode::TotalAprDebits, // 596
-    TypeCode::ArpDebit, // 597
-    TypeCode::Unknown, // 598
-    TypeCode::Unknown, // 599
-    TypeCode::Unknown, // 600
-    TypeCode::EstimatedTotalDisbursement, // 601
-    TypeCode::AdjustedTotalDisbursement, // 602
-    TypeCode::Unknown, // 603
-    TypeCode::Unknown, // 604
-    TypeCode::Unknown, // 605
-    TypeCode::Unknown, // 606
-    TypeCode::Unknown, // 607
-    TypeCode::Unknown, // 608
-    TypeCode::Unknown, // 609
-    TypeCode::TotalFundsRequired, // 610
-    TypeCode::TotalWireTransfersOutChf, // 611
-    TypeCode::TotalWireTransfersOutFf, // 612
-    TypeCode::TotalInternationalDebitChf, // 613
-    TypeCode::TotalInternationalDebitFf, // 614
-    TypeCode::TotalFederalReserveBankCommercialBankDebit, // 615
-    TypeCode::FederalReserveBankCommercialBankDebit, // 616
-    TypeCode::TotalSecuritiesPurchasedChf, // 617
-    TypeCode::TotalSecuritiesPurchasedFf, // 618
-    TypeCode::Unknown, // 619
-    TypeCode::Unknown, // 620
-    TypeCode::TotalBrokerDebitsChf, // 621
-    TypeCode::BrokerDebit, // 622
-    TypeCode::TotalBrokerDebitsFf, // 623
-    TypeCode::Unknown, // 624
-    TypeCode::TotalBrokerDebits, // 625
-    TypeCode::TotalFedFundsPurchased, // 626
-    TypeCode::FedFundsPurchased, // 627
-    TypeCode::TotalCashCenterDebits, // 628
-    TypeCode::CashCenterDebit, // 629
-    TypeCode::TotalDebitAdjustments, // 630
-    TypeCode::DebitAdjustment, // 631
-    TypeCode::TotalTrustDebits, // 632
-    TypeCode::TrustDebit, // 633
-    TypeCode::YtdAdjustmentDebit, // 634
-    TypeCode::Unknown, // 635
-    TypeCode::Unknown, // 636
-    TypeCode::Unknown, // 637
-    TypeCode::Unknown, // 638
-    TypeCode::Unknown, // 639
-    TypeCode::TotalEscrowDebits, // 640
-    TypeCode::IndividualEscrowDebit, // 641
-    TypeCode::Unknown, // 642
-    TypeCode::Unknown, // 643
-    TypeCode::IndividualBackValueDebit, // 644
-    TypeCode::Unknown, // 645
-    TypeCode::TransferCalculationDebit, // 646
-    TypeCode::Unknown, // 647
-    TypeCode::Unknown, // 648
-    TypeCode::Unknown, // 649
-    TypeCode::InvestmentsPurchased, // 650
-    TypeCode::IndividualInvestmentPurchased, // 651
-    TypeCode::Unknown, // 652
-    TypeCode::Unknown, // 653
-    TypeCode::InterestDebit, // 654
-    TypeCode::TotalInvestmentInterestDebits, // 655
-    TypeCode::SweepPrincipalBuy, // 656
-    TypeCode::FuturesDebit, // 657
-    TypeCode::PrincipalPaymentsDebit, // 658
-    TypeCode::InterestAdjustmentDebit, // 659
-    TypeCode::Unknown, // 660
-    TypeCode::AccountAnalysisFee, // 661
-    TypeCode::CorrespondentCollectionDebit, // 662
-    TypeCode::CorrespondentCollectionAdjustmentDb, // 663
-    TypeCode::LoanParticipationDb, // 664
-    TypeCode::InterceptDebits, // 665
-    TypeCode::CurrencyAndCoinShipped, // 666
-    TypeCode::FoodStampLetterDb, // 667
-    TypeCode::FoodStampAdjustmentDb, // 668
-    TypeCode::ClearingSettlementDebit, // 669
-    TypeCode::TotalBackValueDebits, // 670
-    TypeCode::Unknown, // 671
-    TypeCode::BackValueAdjustmentDb, // 672
-    TypeCode::CustomerPayrollDb, // 673
-    TypeCode::FrbStatementRecapDb, // 674
-    TypeCode::Unknown, // 675
-    TypeCode::SavingsBondLetterOrAdjustmentDb, // 676
-    TypeCode::TreasuryTaxAndLoanDebit, // 677
-    TypeCode::TransferOfTreasuryDebit, // 678
-    TypeCode::FrbGovernmentChecksCashLetterDebit, // 679
-    TypeCode::Unknown, // 680
-    TypeCode::FrbGovernmentCheckAdjustmentDb, // 681
-    TypeCode::FrbPostalMoneyOrderDebit, // 682
-    TypeCode::FrbPostalMoneyOrderAdjustmentDb, // 683
-    TypeCode::FrbCashLetterAutoChargeDebit, // 684
-    TypeCode::TotalUniversalDebits, // 685
-    TypeCode::FrbCashLetterAutoChargeAdjustmentDb, // 686
-    TypeCode::FrbFineSortCashLetterDebit, // 687
-    TypeCode::FrbFineSortAdjustmentDb, // 688
-    TypeCode::FrbFreightPaymentDebits, // 689
-    TypeCode::TotalMiscellaneousDebits, // 690
-    TypeCode::UniversalDebit, // 691
-    TypeCode::FreightPaymentDebit, // 692
-    TypeCode::ItemizedDebitOver10, // 693
-    TypeCode::DepositReversal, // 694
-    TypeCode::DepositCorrectionDebit, // 695
-    TypeCode::RegularCollectionDebit, // 696
-    TypeCode::CumulativeDebits, // 697
-    TypeCode::MiscellaneousFees, // 698
-    TypeCode::MiscellaneousDebit, // 699
-    TypeCode::Unknown, // 700
-    TypeCode::PrincipalLoanBalance, // 701
-    TypeCode::Unknown, // 702
-    TypeCode::AvailableCommitmentAmount, // 703
-    TypeCode::Unknown, // 704
-    TypeCode::PaymentAmountDue, // 705
-    TypeCode::Unknown, // 706
-    TypeCode::PrincipalAmountPastDue, // 707
-    TypeCode::Unknown, // 708
-    TypeCode::InterestAmountPastDue, // 709
-    TypeCode::Unknown, // 710
-    TypeCode::Unknown, // 711
-    TypeCode::Unknown, // 712
-    TypeCode::Unknown, // 713
-    TypeCode::Unknown, // 714
-    TypeCode::Unknown, // 715
-    TypeCode::Unknown, // 716
-    TypeCode::Unknown, // 717
-    TypeCode::Unknown, // 718
-    TypeCode::Unknown, // 719
-    TypeCode::TotalLoanPayment, // 720
-    TypeCode::AmountAppliedToInterest, // 721
-    TypeCode::AmountAppliedToPrincipal, // 722
-    TypeCode::AmountAppliedToEscrow, // 723
-    TypeCode::AmountAppliedToLateCharges, // 724
-    TypeCode::AmountAppliedToBuydown, // 725
-    TypeCode::AmountAppliedToMiscFees, // 726
-    TypeCode::AmountAppliedToDeferredInterestDetail, // 727
-    TypeCode::AmountAppliedToServiceCharge, // 728
-    TypeCode::Unknown, // 729
-    TypeCode::Unknown, // 730
-    TypeCode::Unknown, // 731
-    TypeCode::Unknown, // 732
-    TypeCode::Unknown, // 733
-    TypeCode::Unknown, // 734
-    TypeCode::Unknown, // 735
-    TypeCode::Unknown, // 736
-    TypeCode::Unknown, // 737
-    TypeCode::Unknown, // 738
-    TypeCode::Unknown, // 739
-    TypeCode::Unknown, // 740
-    TypeCode::Unknown, // 741
-    TypeCode::Unknown, // 742
-    TypeCode::Unknown, // 743
-    TypeCode::Unknown, // 744
-    TypeCode::Unknown, // 745
-    TypeCode::Unknown, // 746
-    TypeCode::Unknown, // 747
-    TypeCode::Unknown, // 748
-    TypeCode::Unknown, // 749
-    TypeCode::Unknown, // 750
-    TypeCode::Unknown, // 751
-    TypeCode::Unknown, // 752
-    TypeCode::Unknown, // 753
-    TypeCode::Unknown, // 754
-    TypeCode::Unknown, // 755
-    TypeCode::Unknown, // 756
-    TypeCode::Unknown, // 757
-    TypeCode::Unknown, // 758
-    TypeCode::Unknown, // 759
-    TypeCode::LoanDisbursement, // 760
-    TypeCode::Unknown, // 761
-    TypeCode::Unknown, // 762
-    TypeCode::Unknown, // 763
-    TypeCode::Unknown, // 764
-    TypeCode::Unknown, // 765
-    TypeCode::Unknown, // 766
-    TypeCode::Unknown, // 767
-    TypeCode::Unknown, // 768
-    TypeCode::Unknown, // 769
-    TypeCode::Unknown, // 770
-    TypeCode::Unknown, // 771
-    TypeCode::Unknown, // 772
-    TypeCode::Unknown, // 773
-    TypeCode::Unknown, // 774
-    TypeCode::Unknown, // 775
-    TypeCode::Unknown, // 776
-    TypeCode::Unknown, // 777
-    TypeCode::Unknown, // 778
-    TypeCode::Unknown, // 779
-    TypeCode::Unknown, // 780
-    TypeCode::Unknown, // 781
-    TypeCode::Unknown, // 782
-    TypeCode::Unknown, // 783
-    TypeCode::Unknown, // 784
-    TypeCode::Unknown, // 785
-    TypeCode::Unknown, // 786
-    TypeCode::Unknown, // 787
-    TypeCode::Unknown, // 788
-    TypeCode::Unknown, // 789
-    TypeCode::Unknown, // 790
-    TypeCode::Unknown, // 791
-    TypeCode::Unknown, // 792
-    TypeCode::Unknown, // 793
-    TypeCode::Unknown, // 794
-    TypeCode::Unknown, // 795
-    TypeCode::Unknown, // 796
-    TypeCode::Unknown, // 797
-    TypeCode::Unknown, // 798
-    TypeCode::Unknown, // 799
-    TypeCode::Unknown, // 800
-    TypeCode::Unknown, // 801
-    TypeCode::Unknown, // 802
-    TypeCode::Unknown, // 803
-    TypeCode::Unknown, // 804
-    TypeCode::Unknown, // 805
-    TypeCode::Unknown, // 806
-    TypeCode::Unknown, // 807
-    TypeCode::Unknown, // 808
-    TypeCode::Unknown, // 809
-    TypeCode::Unknown, // 810
-    TypeCode::Unknown, // 811
-    TypeCode::Unknown, // 812
-    TypeCode::Unknown, // 813
-    TypeCode::Unknown, // 814
-    TypeCode::Unknown, // 815
-    TypeCode::Unknown, // 816
-    TypeCode::Unknown, // 817
-    TypeCode::Unknown, // 818
-    TypeCode::Unknown, // 819
-    TypeCode::Unknown, // 820
-    TypeCode::Unknown, // 821
-    TypeCode::Unknown, // 822
-    TypeCode::Unknown, // 823
-    TypeCode::Unknown, // 824
-    TypeCode::Unknown, // 825
-    TypeCode::Unknown, // 826
-    TypeCode::Unknown, // 827
-    TypeCode::Unknown, // 828
-    TypeCode::Unknown, // 829
-    TypeCode::Unknown, // 830
-    TypeCode::Unknown, // 831
-    TypeCode::Unknown, // 832
-    TypeCode::Unknown, // 833
-    TypeCode::Unknown, // 834
-    TypeCode::Unknown, // 835
-    TypeCode::Unknown, // 836
-    TypeCode::Unknown, // 837
-    TypeCode::Unknown, // 838
-    TypeCode::Unknown, // 839
-    TypeCode::Unknown, // 840
-    TypeCode::Unknown, // 841
-    TypeCode::Unknown, // 842
-    TypeCode::Unknown, // 843
-    TypeCode::Unknown, // 844
-    TypeCode::Unknown, // 845
-    TypeCode::Unknown, // 846
-    TypeCode::Unknown, // 847
-    TypeCode::Unknown, // 848
-    TypeCode::Unknown, // 849
-    TypeCode::Unknown, // 850
-    TypeCode::Unknown, // 851
-    TypeCode::Unknown, // 852
-    TypeCode::Unknown, // 853
-    TypeCode::Unknown, // 854
-    TypeCode::Unknown, // 855
-    TypeCode::Unknown, // 856
-    TypeCode::Unknown, // 857
-    TypeCode::Unknown, // 858
-    TypeCode::Unknown, // 859
-    TypeCode::Unknown, // 860
-    TypeCode::Unknown, // 861
-    TypeCode::Unknown, // 862
-    TypeCode::Unknown, // 863
-    TypeCode::Unknown, // 864
-    TypeCode::Unknown, // 865
-    TypeCode::Unknown, // 866
-    TypeCode::Unknown, // 867
-    TypeCode::Unknown, // 868
-    TypeCode::Unknown, // 869
-    TypeCode::Unknown, // 870
-    TypeCode::Unknown, // 871
-    TypeCode::Unknown, // 872
-    TypeCode::Unknown, // 873
-    TypeCode::Unknown, // 874
-    TypeCode::Unknown, // 875
-    TypeCode::Unknown, // 876
-    TypeCode::Unknown, // 877
-    TypeCode::Unknown, // 878
-    TypeCode::Unknown, // 879
-    TypeCode::Unknown, // 880
-    TypeCode::Unknown, // 881
-    TypeCode::Unknown, // 882
-    TypeCode::Unknown, // 883
-    TypeCode::Unknown, // 884
-    TypeCode::Unknown, // 885
-    TypeCode::Unknown, // 886
-    TypeCode::Unknown, // 887
-    TypeCode::Unknown, // 888
-    TypeCode::Unknown, // 889
-    TypeCode::ContainsNonMonetaryInformation, // 890
-    TypeCode::Unknown, // 891
-    TypeCode::Unknown, // 892
-    TypeCode::Unknown, // 893
-    TypeCode::Unknown, // 894
-    TypeCode::Unknown, // 895
-    TypeCode::Unknown, // 896
-    TypeCode::Unknown, // 897
-    TypeCode::Unknown, // 898
-    TypeCode::Unknown, // 899
-    TypeCode::Unknown, // 900
-    TypeCode::Unknown, // 901
-    TypeCode::Unknown, // 902
-    TypeCode::Unknown, // 903
-    TypeCode::Unknown, // 904
-    TypeCode::Unknown, // 905
-    TypeCode::Unknown, // 906
-    TypeCode::Unknown, // 907
-    TypeCode::Unknown, // 908
-    TypeCode::Unknown, // 909
-    TypeCode::Unknown, // 910
-    TypeCode::Unknown, // 911
-    TypeCode::Unknown, // 912
-    TypeCode::Unknown, // 913
-    TypeCode::Unknown, // 914
-    TypeCode::Unknown, // 915
-    TypeCode::Unknown, // 916
-    TypeCode::Unknown, // 917
-    TypeCode::Unknown, // 918
-    TypeCode::Unknown, // 919
-    TypeCode::Unknown, // 920
-    TypeCode::Unknown, // 921
-    TypeCode::Unknown, // 922
-    TypeCode::Unknown, // 923
-    TypeCode::Unknown, // 924
-    TypeCode::Unknown, // 925
-    TypeCode::Unknown, // 926
-    TypeCode::Unknown, // 927
-    TypeCode::Unknown, // 928
-    TypeCode::Unknown, // 929
-    TypeCode::Unknown, // 930
-    TypeCode::Unknown, // 931
-    TypeCode::Unknown, // 932
-    TypeCode::Unknown, // 933
-    TypeCode::Unknown, // 934
-    TypeCode::Unknown, // 935
-    TypeCode::Unknown, // 936
-    TypeCode::Unknown, // 937
-    TypeCode::Unknown, // 938
-    TypeCode::Unknown, // 939
-    TypeCode::Unknown, // 940
-    TypeCode::Unknown, // 941
-    TypeCode::Unknown, // 942
-    TypeCode::Unknown, // 943
-    TypeCode::Unknown, // 944
-    TypeCode::Unknown, // 945
-    TypeCode::Unknown, // 946
-    TypeCode::Unknown, // 947
-    TypeCode::Unknown, // 948
-    TypeCode::Unknown, // 949
-    TypeCode::Unknown, // 950
-    TypeCode::Unknown, // 951
-    TypeCode::Unknown, // 952
-    TypeCode::Unknown, // 953
-    TypeCode::Unknown, // 954
-    TypeCode::Unknown, // 955
-    TypeCode::Unknown, // 956
-    TypeCode::Unknown, // 957
-    TypeCode::Unknown, // 958
-    TypeCode::Unknown, // 959
-    TypeCode::Unknown, // 960
-    TypeCode::Unknown, // 961
-    TypeCode::Unknown, // 962
-    TypeCode::Unknown, // 963
-    TypeCode::Unknown, // 964
-    TypeCode::Unknown, // 965
-    TypeCode::Unknown, // 966
-    TypeCode::Unknown, // 967
-    TypeCode::Unknown, // 968
-    TypeCode::Unknown, // 969
-    TypeCode::Unknown, // 970
-    TypeCode::Unknown, // 971
-    TypeCode::Unknown, // 972
-    TypeCode::Unknown, // 973
-    TypeCode::Unknown, // 974
-    TypeCode::Unknown, // 975
-    TypeCode::Unknown, // 976
-    TypeCode::Unknown, // 977
-    TypeCode::Unknown, // 978
-    TypeCode::Unknown, // 979
-    TypeCode::Unknown, // 980
-    TypeCode::Unknown, // 981
-    TypeCode::Unknown, // 982
-    TypeCode::Unknown, // 983
-    TypeCode::Unknown, // 984
-    TypeCode::Unknown, // 985
-    TypeCode::Unknown, // 986
-    TypeCode::Unknown, // 987
-    TypeCode::Unknown, // 988
-    TypeCode::Unknown, // 989
-    TypeCode::Unknown, // 990
-    TypeCode::Unknown, // 991
-    TypeCode::Unknown, // 992
-    TypeCode::Unknown, // 993
-    TypeCode::Unknown, // 994
-    TypeCode::Unknown, // 995
-    TypeCode::Unknown, // 996
-    TypeCode::Unknown, // 997
-    TypeCode::Unknown, // 998
-    TypeCode::Unknown, // 999
+    TypeCode::GrandTotalCreditsLessGrandTotalDebits,         // 361
+    TypeCode::CorrespondentCollection,                       // 362
+    TypeCode::CorrespondentCollectionAdjustmentCr,           // 363
+    TypeCode::LoanParticipationCr,                           // 364
+    TypeCode::Unknown,                                       // 365
+    TypeCode::CurrencyAndCoinDeposited,                      // 366
+    TypeCode::FoodStampLetterCr,                             // 367
+    TypeCode::FoodStampAdjustmentCr,                         // 368
+    TypeCode::ClearingSettlementCredit,                      // 369
+    TypeCode::TotalBackValueCredits,                         // 370
+    TypeCode::Unknown,                                       // 371
+    TypeCode::BackValueAdjustmentCr,                         // 372
+    TypeCode::CustomerPayrollCr,                             // 373
+    TypeCode::FrbStatementRecapCr,                           // 374
+    TypeCode::Unknown,                                       // 375
+    TypeCode::SavingsBondLetterOrAdjustmentCr,               // 376
+    TypeCode::TreasuryTaxAndLoanCredit,                      // 377
+    TypeCode::TransferOfTreasuryCredit,                      // 378
+    TypeCode::FrbGovernmentChecksCashLetterCredit,           // 379
+    TypeCode::Unknown,                                       // 380
+    TypeCode::FrbGovernmentCheckAdjustmentCr,                // 381
+    TypeCode::FrbPostalMoneyOrderCredit,                     // 382
+    TypeCode::FrbPostalMoneyOrderAdjustmentCr,               // 383
+    TypeCode::FrbCashLetterAutoChargeCredit,                 // 384
+    TypeCode::TotalUniversalCredits,                         // 385
+    TypeCode::FrbCashLetterAutoChargeAdjustmentCr,           // 386
+    TypeCode::FrbFineSortCashLetterCredit,                   // 387
+    TypeCode::FrbFineSortAdjustmentCr,                       // 388
+    TypeCode::TotalFreightPaymentCredits,                    // 389
+    TypeCode::TotalMiscellaneousCredits,                     // 390
+    TypeCode::UniversalCredit,                               // 391
+    TypeCode::FreightPaymentCredit,                          // 392
+    TypeCode::ItemizedCreditOver10,                          // 393
+    TypeCode::CumulativeCredits,                             // 394
+    TypeCode::CheckReversal,                                 // 395
+    TypeCode::Unknown,                                       // 396
+    TypeCode::FloatAdjustmentCr,                             // 397
+    TypeCode::MiscellaneousFeeRefund,                        // 398
+    TypeCode::MiscellaneousCredit,                           // 399
+    TypeCode::TotalDebits,                                   // 400
+    TypeCode::TotalDebitAmountMtd,                           // 401
+    TypeCode::Unknown,                                       // 402
+    TypeCode::TodaySTotalDebits,                             // 403
+    TypeCode::Unknown,                                       // 404
+    TypeCode::TotalDebitLessWireTransfersAndChargeBacks,     // 405
+    TypeCode::DebitsNotDetailed,                             // 406
+    TypeCode::Unknown,                                       // 407
+    TypeCode::FloatAdjustmentDb,                             // 408
+    TypeCode::DebitAnyType,                                  // 409
+    TypeCode::TotalYtdAdjustment,                            // 410
+    TypeCode::Unknown,                                       // 411
+    TypeCode::TotalDebitsExcludingReturnedItems,             // 412
+    TypeCode::Unknown,                                       // 413
+    TypeCode::Unknown,                                       // 414
+    TypeCode::LockboxDebit,                                  // 415
+    TypeCode::TotalLockboxDebits,                            // 416
+    TypeCode::Unknown,                                       // 417
+    TypeCode::Unknown,                                       // 418
+    TypeCode::Unknown,                                       // 419
+    TypeCode::EdiTransactionDebits,                          // 420
+    TypeCode::EdiTransactionDebit,                           // 421
+    TypeCode::EdibanxSettlementDebit,                        // 422
+    TypeCode::EdibanxReturnItemDebit,                        // 423
+    TypeCode::Unknown,                                       // 424
+    TypeCode::Unknown,                                       // 425
+    TypeCode::Unknown,                                       // 426
+    TypeCode::Unknown,                                       // 427
+    TypeCode::Unknown,                                       // 428
+    TypeCode::Unknown,                                       // 429
+    TypeCode::TotalPayableThroughDrafts,                     // 430
+    TypeCode::Unknown,                                       // 431
+    TypeCode::Unknown,                                       // 432
+    TypeCode::Unknown,                                       // 433
+    TypeCode::Unknown,                                       // 434
+    TypeCode::PayableThroughDraft,                           // 435
+    TypeCode::Unknown,                                       // 436
+    TypeCode::Unknown,                                       // 437
+    TypeCode::Unknown,                                       // 438
+    TypeCode::Unknown,                                       // 439
+    TypeCode::Unknown,                                       // 440
+    TypeCode::Unknown,                                       // 441
+    TypeCode::Unknown,                                       // 442
+    TypeCode::Unknown,                                       // 443
+    TypeCode::Unknown,                                       // 444
+    TypeCode::AchConcentrationDebit,                         // 445
+    TypeCode::TotalAchDisbursementFundingDebits,             // 446
+    TypeCode::AchDisbursementFundingDebit,                   // 447
+    TypeCode::Unknown,                                       // 448
+    TypeCode::Unknown,                                       // 449
+    TypeCode::TotalAchDebits,                                // 450
+    TypeCode::AchDebitReceived,                              // 451
+    TypeCode::ItemInAchDisbursementOrDebit,                  // 452
+    TypeCode::Unknown,                                       // 453
+    TypeCode::Unknown,                                       // 454
+    TypeCode::PreauthorizedAchDebit,                         // 455
+    TypeCode::Unknown,                                       // 456
+    TypeCode::Unknown,                                       // 457
+    TypeCode::Unknown,                                       // 458
+    TypeCode::Unknown,                                       // 459
+    TypeCode::Unknown,                                       // 460
+    TypeCode::Unknown,                                       // 461
+    TypeCode::AccountHolderInitiatedAchDebit,                // 462
+    TypeCode::CorporateTradePaymentDebits,                   // 463
+    TypeCode::CorporateTradePaymentDebit,                    // 464
+    TypeCode::CorporateTradePaymentSettlementDb,             // 465
+    TypeCode::AchSettlementDb,                               // 466
+    TypeCode::AchSettlementDebits,                           // 467
+    TypeCode::AchReturnItemOrAdjustmentSettlementDb,         // 468
+    TypeCode::MiscellaneousAchDebit,                         // 469
+    TypeCode::TotalCheckPaid,                                // 470
+    TypeCode::TotalCheckPaidCumulativeMtd,                   // 471
+    TypeCode::CumulativeChecksPaid,                          // 472
+    TypeCode::Unknown,                                       // 473
+    TypeCode::CertifiedCheckDebit,                           // 474
+    TypeCode::CheckPaid,                                     // 475
+    TypeCode::FederalReserveBankLetterDebit,                 // 476
+    TypeCode::BankOriginatedDebit,                           // 477
+    TypeCode::ListPostDebits,                                // 478
+    TypeCode::ListPostDebit,                                 // 479
+    TypeCode::TotalLoanPayments,                             // 480
+    TypeCode::IndividualLoanPayment,                         // 481
+    TypeCode::TotalBankOriginatedDebits,                     // 482
+    TypeCode::Unknown,                                       // 483
+    TypeCode::Draft,                                         // 484
+    TypeCode::DtcDebit,                                      // 485
+    TypeCode::TotalCashLetterDebits,                         // 486
+    TypeCode::CashLetterDebit,                               // 487
+    TypeCode::Unknown,                                       // 488
+    TypeCode::CashLetterAdjustmentDb,                        // 489
+    TypeCode::TotalOutgoingMoneyTransfers,                   // 490
+    TypeCode::IndividualOutgoingInternalMoneyTransfer,       // 491
+    TypeCode::Unknown,                                       // 492
+    TypeCode::CustomerTerminalInitiatedMoneyTransfer,        // 493
+    TypeCode::Unknown,                                       // 494
+    TypeCode::OutgoingMoneyTransfer,                         // 495
+    TypeCode::MoneyTransferAdjustmentDb,                     // 496
+    TypeCode::Unknown,                                       // 497
+    TypeCode::CompensationDb,                                // 498
+    TypeCode::Unknown,                                       // 499
+    TypeCode::TotalAutomaticTransferDebits,                  // 500
+    TypeCode::IndividualAutomaticTransferDebit,              // 501
+    TypeCode::BondOperationsDebit,                           // 502
+    TypeCode::Unknown,                                       // 503
+    TypeCode::Unknown,                                       // 504
+    TypeCode::TotalBookTransferDebits,                       // 505
+    TypeCode::BookTransferDebit,                             // 506
+    TypeCode::TotalInternationalMoneyTransferDebits,         // 507
+    TypeCode::IndividualInternationalMoneyTransferDebits,    // 508
+    TypeCode::Unknown,                                       // 509
+    TypeCode::TotalInternationalDebits,                      // 510
+    TypeCode::Unknown,                                       // 511
+    TypeCode::LetterOfCreditDebit,                           // 512
+    TypeCode::LetterOfCreditDb,                              // 513
+    TypeCode::ForeignExchangeDebit,                          // 514
+    TypeCode::TotalLettersOfCreditDb,                        // 515
+    TypeCode::ForeignRemittanceDebit,                        // 516
+    TypeCode::Unknown,                                       // 517
+    TypeCode::ForeignCollectionDebit,                        // 518
+    TypeCode::Unknown,                                       // 519
+    TypeCode::Unknown,                                       // 520
+    TypeCode::Unknown,                                       // 521
+    TypeCode::ForeignChecksPaid,                             // 522
+    TypeCode::Unknown,                                       // 523
+    TypeCode::CommissionDb,                                  // 524
+    TypeCode::Unknown,                                       // 525
+    TypeCode::InternationalMoneyMarketTradingDb,             // 526
+    TypeCode::StandingOrderDb,                               // 527
+    TypeCode::Unknown,                                       // 528
+    TypeCode::MiscellaneousInternationalDebit,               // 529
+    TypeCode::TotalSecurityDebits,                           // 530
+    TypeCode::SecuritiesPurchased,                           // 531
+    TypeCode::TotalAmountOfSecuritiesPurchased,              // 532
+    TypeCode::SecurityCollectionDebit,                       // 533
+    TypeCode::TotalMiscellaneousSecuritiesDbFf,              // 534
+    TypeCode::PurchaseOfEquitySecurities,                    // 535
+    TypeCode::TotalMiscellaneousSecuritiesDebitChf,          // 536
+    TypeCode::TotalCollectionDebit,                          // 537
+    TypeCode::MaturedRepurchaseOrder,                        // 538
+    TypeCode::TotalBankersAcceptancesDebit,                  // 539
+    TypeCode::CouponCollectionDebit,                         // 540
+    TypeCode::BankersAcceptancesDb,                          // 541
+    TypeCode::PurchaseOfDebtSecurities,                      // 542
+    TypeCode::DomesticCollection,                            // 543
+    TypeCode::InterestMaturedPrincipalPaymentDb,             // 544
+    TypeCode::Unknown,                                       // 545
+    TypeCode::CommercialPaperDb,                             // 546
+    TypeCode::CapitalChangeDb,                               // 547
+    TypeCode::SavingsBondsSalesAdjustmentDb,                 // 548
+    TypeCode::MiscellaneousSecurityDebit,                    // 549
+    TypeCode::TotalDepositedItemsReturned,                   // 550
+    TypeCode::TotalCreditReversals,                          // 551
+    TypeCode::CreditReversal,                                // 552
+    TypeCode::Unknown,                                       // 553
+    TypeCode::PostingErrorCorrectionDebit,                   // 554
+    TypeCode::DepositedItemReturned,                         // 555
+    TypeCode::TotalAchReturnItemsDb,                         // 556
+    TypeCode::IndividualAchReturnItemDb,                     // 557
+    TypeCode::AchReversalDebit,                              // 558
+    TypeCode::Unknown,                                       // 559
+    TypeCode::TotalRejectedDebits,                           // 560
+    TypeCode::IndividualRejectedDebit,                       // 561
+    TypeCode::Unknown,                                       // 562
+    TypeCode::OverdraftDb,                                   // 563
+    TypeCode::OverdraftFee,                                  // 564
+    TypeCode::Unknown,                                       // 565
+    TypeCode::ReturnItemDb,                                  // 566
+    TypeCode::ReturnItemFee,                                 // 567
+    TypeCode::ReturnItemAdjustmentDb,                        // 568
+    TypeCode::Unknown,                                       // 569
+    TypeCode::TotalZbaDebits,                                // 570
+    TypeCode::Unknown,                                       // 571
+    TypeCode::Unknown,                                       // 572
+    TypeCode::Unknown,                                       // 573
+    TypeCode::CumulativeZbaDebits,                           // 574
+    TypeCode::ZbaDebit,                                      // 575
+    TypeCode::Unknown,                                       // 576
+    TypeCode::ZbaDebitTransfer,                              // 577
+    TypeCode::ZbaDebitAdjustment,                            // 578
+    TypeCode::Unknown,                                       // 579
+    TypeCode::TotalControlledDisbursingDebits,               // 580
+    TypeCode::IndividualControlledDisbursingDebit,           // 581
+    TypeCode::Unknown,                                       // 582
+    TypeCode::TotalDisbursingChecksPaidEarlyAmount,          // 583
+    TypeCode::TotalDisbursingChecksPaidLaterAmount,          // 584
+    TypeCode::DisbursingFundingRequirement,                  // 585
+    TypeCode::FrbPresentmentEstimateFedEstimate,             // 586
+    TypeCode::LateDebitsAfterNotification,                   // 587
+    TypeCode::TotalDisbursingChecksPaidLastAmount,           // 588
+    TypeCode::Unknown,                                       // 589
+    TypeCode::TotalDtcDebits,                                // 590
+    TypeCode::Unknown,                                       // 591
+    TypeCode::Unknown,                                       // 592
+    TypeCode::Unknown,                                       // 593
+    TypeCode::TotalAtmDebits,                                // 594
+    TypeCode::AtmDebit,                                      // 595
+    TypeCode::TotalAprDebits,                                // 596
+    TypeCode::ArpDebit,                                      // 597
+    TypeCode::Unknown,                                       // 598
+    TypeCode::Unknown,                                       // 599
+    TypeCode::Unknown,                                       // 600
+    TypeCode::EstimatedTotalDisbursement,                    // 601
+    TypeCode::AdjustedTotalDisbursement,                     // 602
+    TypeCode::Unknown,                                       // 603
+    TypeCode::Unknown,                                       // 604
+    TypeCode::Unknown,                                       // 605
+    TypeCode::Unknown,                                       // 606
+    TypeCode::Unknown,                                       // 607
+    TypeCode::Unknown,                                       // 608
+    TypeCode::Unknown,                                       // 609
+    TypeCode::TotalFundsRequired,                            // 610
+    TypeCode::TotalWireTransfersOutChf,                      // 611
+    TypeCode::TotalWireTransfersOutFf,                       // 612
+    TypeCode::TotalInternationalDebitChf,                    // 613
+    TypeCode::TotalInternationalDebitFf,                     // 614
+    TypeCode::TotalFederalReserveBankCommercialBankDebit,    // 615
+    TypeCode::FederalReserveBankCommercialBankDebit,         // 616
+    TypeCode::TotalSecuritiesPurchasedChf,                   // 617
+    TypeCode::TotalSecuritiesPurchasedFf,                    // 618
+    TypeCode::Unknown,                                       // 619
+    TypeCode::Unknown,                                       // 620
+    TypeCode::TotalBrokerDebitsChf,                          // 621
+    TypeCode::BrokerDebit,                                   // 622
+    TypeCode::TotalBrokerDebitsFf,                           // 623
+    TypeCode::Unknown,                                       // 624
+    TypeCode::TotalBrokerDebits,                             // 625
+    TypeCode::TotalFedFundsPurchased,                        // 626
+    TypeCode::FedFundsPurchased,                             // 627
+    TypeCode::TotalCashCenterDebits,                         // 628
+    TypeCode::CashCenterDebit,                               // 629
+    TypeCode::TotalDebitAdjustments,                         // 630
+    TypeCode::DebitAdjustment,                               // 631
+    TypeCode::TotalTrustDebits,                              // 632
+    TypeCode::TrustDebit,                                    // 633
+    TypeCode::YtdAdjustmentDebit,                            // 634
+    TypeCode::Unknown,                                       // 635
+    TypeCode::Unknown,                                       // 636
+    TypeCode::Unknown,                                       // 637
+    TypeCode::Unknown,                                       // 638
+    TypeCode::Unknown,                                       // 639
+    TypeCode::TotalEscrowDebits,                             // 640
+    TypeCode::IndividualEscrowDebit,                         // 641
+    TypeCode::Unknown,                                       // 642
+    TypeCode::Unknown,                                       // 643
+    TypeCode::IndividualBackValueDebit,                      // 644
+    TypeCode::Unknown,                                       // 645
+    TypeCode::TransferCalculationDebit,                      // 646
+    TypeCode::Unknown,                                       // 647
+    TypeCode::Unknown,                                       // 648
+    TypeCode::Unknown,                                       // 649
+    TypeCode::InvestmentsPurchased,                          // 650
+    TypeCode::IndividualInvestmentPurchased,                 // 651
+    TypeCode::Unknown,                                       // 652
+    TypeCode::Unknown,                                       // 653
+    TypeCode::InterestDebit,                                 // 654
+    TypeCode::TotalInvestmentInterestDebits,                 // 655
+    TypeCode::SweepPrincipalBuy,                             // 656
+    TypeCode::FuturesDebit,                                  // 657
+    TypeCode::PrincipalPaymentsDebit,                        // 658
+    TypeCode::InterestAdjustmentDebit,                       // 659
+    TypeCode::Unknown,                                       // 660
+    TypeCode::AccountAnalysisFee,                            // 661
+    TypeCode::CorrespondentCollectionDebit,                  // 662
+    TypeCode::CorrespondentCollectionAdjustmentDb,           // 663
+    TypeCode::LoanParticipationDb,                           // 664
+    TypeCode::InterceptDebits,                               // 665
+    TypeCode::CurrencyAndCoinShipped,                        // 666
+    TypeCode::FoodStampLetterDb,                             // 667
+    TypeCode::FoodStampAdjustmentDb,                         // 668
+    TypeCode::ClearingSettlementDebit,                       // 669
+    TypeCode::TotalBackValueDebits,                          // 670
+    TypeCode::Unknown,                                       // 671
+    TypeCode::BackValueAdjustmentDb,                         // 672
+    TypeCode::CustomerPayrollDb,                             // 673
+    TypeCode::FrbStatementRecapDb,                           // 674
+    TypeCode::Unknown,                                       // 675
+    TypeCode::SavingsBondLetterOrAdjustmentDb,               // 676
+    TypeCode::TreasuryTaxAndLoanDebit,                       // 677
+    TypeCode::TransferOfTreasuryDebit,                       // 678
+    TypeCode::FrbGovernmentChecksCashLetterDebit,            // 679
+    TypeCode::Unknown,                                       // 680
+    TypeCode::FrbGovernmentCheckAdjustmentDb,                // 681
+    TypeCode::FrbPostalMoneyOrderDebit,                      // 682
+    TypeCode::FrbPostalMoneyOrderAdjustmentDb,               // 683
+    TypeCode::FrbCashLetterAutoChargeDebit,                  // 684
+    TypeCode::TotalUniversalDebits,                          // 685
+    TypeCode::FrbCashLetterAutoChargeAdjustmentDb,           // 686
+    TypeCode::FrbFineSortCashLetterDebit,                    // 687
+    TypeCode::FrbFineSortAdjustmentDb,                       // 688
+    TypeCode::FrbFreightPaymentDebits,                       // 689
+    TypeCode::TotalMiscellaneousDebits,                      // 690
+    TypeCode::UniversalDebit,                                // 691
+    TypeCode::FreightPaymentDebit,                           // 692
+    TypeCode::ItemizedDebitOver10,                           // 693
+    TypeCode::DepositReversal,                               // 694
+    TypeCode::DepositCorrectionDebit,                        // 695
+    TypeCode::RegularCollectionDebit,                        // 696
+    TypeCode::CumulativeDebits,                              // 697
+    TypeCode::MiscellaneousFees,                             // 698
+    TypeCode::MiscellaneousDebit,                            // 699
+    TypeCode::Unknown,                                       // 700
+    TypeCode::PrincipalLoanBalance,                          // 701
+    TypeCode::Unknown,                                       // 702
+    TypeCode::AvailableCommitmentAmount,                     // 703
+    TypeCode::Unknown,                                       // 704
+    TypeCode::PaymentAmountDue,                              // 705
+    TypeCode::Unknown,                                       // 706
+    TypeCode::PrincipalAmountPastDue,                        // 707
+    TypeCode::Unknown,                                       // 708
+    TypeCode::InterestAmountPastDue,                         // 709
+    TypeCode::Unknown,                                       // 710
+    TypeCode::Unknown,                                       // 711
+    TypeCode::Unknown,                                       // 712
+    TypeCode::Unknown,                                       // 713
+    TypeCode::Unknown,                                       // 714
+    TypeCode::Unknown,                                       // 715
+    TypeCode::Unknown,                                       // 716
+    TypeCode::Unknown,                                       // 717
+    TypeCode::Unknown,                                       // 718
+    TypeCode::Unknown,                                       // 719
+    TypeCode::TotalLoanPayment,                              // 720
+    TypeCode::AmountAppliedToInterest,                       // 721
+    TypeCode::AmountAppliedToPrincipal,                      // 722
+    TypeCode::AmountAppliedToEscrow,                         // 723
+    TypeCode::AmountAppliedToLateCharges,                    // 724
+    TypeCode::AmountAppliedToBuydown,                        // 725
+    TypeCode::AmountAppliedToMiscFees,                       // 726
+    TypeCode::AmountAppliedToDeferredInterestDetail,         // 727
+    TypeCode::AmountAppliedToServiceCharge,                  // 728
+    TypeCode::Unknown,                                       // 729
+    TypeCode::Unknown,                                       // 730
+    TypeCode::Unknown,                                       // 731
+    TypeCode::Unknown,                                       // 732
+    TypeCode::Unknown,                                       // 733
+    TypeCode::Unknown,                                       // 734
+    TypeCode::Unknown,                                       // 735
+    TypeCode::Unknown,                                       // 736
+    TypeCode::Unknown,                                       // 737
+    TypeCode::Unknown,                                       // 738
+    TypeCode::Unknown,                                       // 739
+    TypeCode::Unknown,                                       // 740
+    TypeCode::Unknown,                                       // 741
+    TypeCode::Unknown,                                       // 742
+    TypeCode::Unknown,                                       // 743
+    TypeCode::Unknown,                                       // 744
+    TypeCode::Unknown,                                       // 745
+    TypeCode::Unknown,                                       // 746
+    TypeCode::Unknown,                                       // 747
+    TypeCode::Unknown,                                       // 748
+    TypeCode::Unknown,                                       // 749
+    TypeCode::Unknown,                                       // 750
+    TypeCode::Unknown,                                       // 751
+    TypeCode::Unknown,                                       // 752
+    TypeCode::Unknown,                                       // 753
+    TypeCode::Unknown,                                       // 754
+    TypeCode::Unknown,                                       // 755
+    TypeCode::Unknown,                                       // 756
+    TypeCode::Unknown,                                       // 757
+    TypeCode::Unknown,                                       // 758
+    TypeCode::Unknown,                                       // 759
+    TypeCode::LoanDisbursement,                              // 760
+    TypeCode::Unknown,                                       // 761
+    TypeCode::Unknown,                                       // 762
+    TypeCode::Unknown,                                       // 763
+    TypeCode::Unknown,                                       // 764
+    TypeCode::Unknown,                                       // 765
+    TypeCode::Unknown,                                       // 766
+    TypeCode::Unknown,                                       // 767
+    TypeCode::Unknown,                                       // 768
+    TypeCode::Unknown,                                       // 769
+    TypeCode::Unknown,                                       // 770
+    TypeCode::Unknown,                                       // 771
+    TypeCode::Unknown,                                       // 772
+    TypeCode::Unknown,                                       // 773
+    TypeCode::Unknown,                                       // 774
+    TypeCode::Unknown,                                       // 775
+    TypeCode::Unknown,                                       // 776
+    TypeCode::Unknown,                                       // 777
+    TypeCode::Unknown,                                       // 778
+    TypeCode::Unknown,                                       // 779
+    TypeCode::Unknown,                                       // 780
+    TypeCode::Unknown,                                       // 781
+    TypeCode::Unknown,                                       // 782
+    TypeCode::Unknown,                                       // 783
+    TypeCode::Unknown,                                       // 784
+    TypeCode::Unknown,                                       // 785
+    TypeCode::Unknown,                                       // 786
+    TypeCode::Unknown,                                       // 787
+    TypeCode::Unknown,                                       // 788
+    TypeCode::Unknown,                                       // 789
+    TypeCode::Unknown,                                       // 790
+    TypeCode::Unknown,                                       // 791
+    TypeCode::Unknown,                                       // 792
+    TypeCode::Unknown,                                       // 793
+    TypeCode::Unknown,                                       // 794
+    TypeCode::Unknown,                                       // 795
+    TypeCode::Unknown,                                       // 796
+    TypeCode::Unknown,                                       // 797
+    TypeCode::Unknown,                                       // 798
+    TypeCode::Unknown,                                       // 799
+    TypeCode::Unknown,                                       // 800
+    TypeCode::Unknown,                                       // 801
+    TypeCode::Unknown,                                       // 802
+    TypeCode::Unknown,                                       // 803
+    TypeCode::Unknown,                                       // 804
+    TypeCode::Unknown,                                       // 805
+    TypeCode::Unknown,                                       // 806
+    TypeCode::Unknown,                                       // 807
+    TypeCode::Unknown,                                       // 808
+    TypeCode::Unknown,                                       // 809
+    TypeCode::Unknown,                                       // 810
+    TypeCode::Unknown,                                       // 811
+    TypeCode::Unknown,                                       // 812
+    TypeCode::Unknown,                                       // 813
+    TypeCode::Unknown,                                       // 814
+    TypeCode::Unknown,                                       // 815
+    TypeCode::Unknown,                                       // 816
+    TypeCode::Unknown,                                       // 817
+    TypeCode::Unknown,                                       // 818
+    TypeCode::Unknown,                                       // 819
+    TypeCode::Unknown,                                       // 820
+    TypeCode::Unknown,                                       // 821
+    TypeCode::Unknown,                                       // 822
+    TypeCode::Unknown,                                       // 823
+    TypeCode::Unknown,                                       // 824
+    TypeCode::Unknown,                                       // 825
+    TypeCode::Unknown,                                       // 826
+    TypeCode::Unknown,                                       // 827
+    TypeCode::Unknown,                                       // 828
+    TypeCode::Unknown,                                       // 829
+    TypeCode::Unknown,                                       // 830
+    TypeCode::Unknown,                                       // 831
+    TypeCode::Unknown,                                       // 832
+    TypeCode::Unknown,                                       // 833
+    TypeCode::Unknown,                                       // 834
+    TypeCode::Unknown,                                       // 835
+    TypeCode::Unknown,                                       // 836
+    TypeCode::Unknown,                                       // 837
+    TypeCode::Unknown,                                       // 838
+    TypeCode::Unknown,                                       // 839
+    TypeCode::Unknown,                                       // 840
+    TypeCode::Unknown,                                       // 841
+    TypeCode::Unknown,                                       // 842
+    TypeCode::Unknown,                                       // 843
+    TypeCode::Unknown,                                       // 844
+    TypeCode::Unknown,                                       // 845
+    TypeCode::Unknown,                                       // 846
+    TypeCode::Unknown,                                       // 847
+    TypeCode::Unknown,                                       // 848
+    TypeCode::Unknown,                                       // 849
+    TypeCode::Unknown,                                       // 850
+    TypeCode::Unknown,                                       // 851
+    TypeCode::Unknown,                                       // 852
+    TypeCode::Unknown,                                       // 853
+    TypeCode::Unknown,                                       // 854
+    TypeCode::Unknown,                                       // 855
+    TypeCode::Unknown,                                       // 856
+    TypeCode::Unknown,                                       // 857
+    TypeCode::Unknown,                                       // 858
+    TypeCode::Unknown,                                       // 859
+    TypeCode::Unknown,                                       // 860
+    TypeCode::Unknown,                                       // 861
+    TypeCode::Unknown,                                       // 862
+    TypeCode::Unknown,                                       // 863
+    TypeCode::Unknown,                                       // 864
+    TypeCode::Unknown,                                       // 865
+    TypeCode::Unknown,                                       // 866
+    TypeCode::Unknown,                                       // 867
+    TypeCode::Unknown,                                       // 868
+    TypeCode::Unknown,                                       // 869
+    TypeCode::Unknown,                                       // 870
+    TypeCode::Unknown,                                       // 871
+    TypeCode::Unknown,                                       // 872
+    TypeCode::Unknown,                                       // 873
+    TypeCode::Unknown,                                       // 874
+    TypeCode::Unknown,                                       // 875
+    TypeCode::Unknown,                                       // 876
+    TypeCode::Unknown,                                       // 877
+    TypeCode::Unknown,                                       // 878
+    TypeCode::Unknown,                                       // 879
+    TypeCode::Unknown,                                       // 880
+    TypeCode::Unknown,                                       // 881
+    TypeCode::Unknown,                                       // 882
+    TypeCode::Unknown,                                       // 883
+    TypeCode::Unknown,                                       // 884
+    TypeCode::Unknown,                                       // 885
+    TypeCode::Unknown,                                       // 886
+    TypeCode::Unknown,                                       // 887
+    TypeCode::Unknown,                                       // 888
+    TypeCode::Unknown,                                       // 889
+    TypeCode::ContainsNonMonetaryInformation,                // 890
+    TypeCode::Unknown,                                       // 891
+    TypeCode::Unknown,                                       // 892
+    TypeCode::Unknown,                                       // 893
+    TypeCode::Unknown,                                       // 894
+    TypeCode::Unknown,                                       // 895
+    TypeCode::Unknown,                                       // 896
+    TypeCode::Unknown,                                       // 897
+    TypeCode::Unknown,                                       // 898
+    TypeCode::Unknown,                                       // 899
+    TypeCode::Unknown,                                       // 900
+    TypeCode::Unknown,                                       // 901
+    TypeCode::Unknown,                                       // 902
+    TypeCode::Unknown,                                       // 903
+    TypeCode::Unknown,                                       // 904
+    TypeCode::Unknown,                                       // 905
+    TypeCode::Unknown,                                       // 906
+    TypeCode::Unknown,                                       // 907
+    TypeCode::Unknown,                                       // 908
+    TypeCode::Unknown,                                       // 909
+    TypeCode::Unknown,                                       // 910
+    TypeCode::Unknown,                                       // 911
+    TypeCode::Unknown,                                       // 912
+    TypeCode::Unknown,                                       // 913
+    TypeCode::Unknown,                                       // 914
+    TypeCode::Unknown,                                       // 915
+    TypeCode::Unknown,                                       // 916
+    TypeCode::Unknown,                                       // 917
+    TypeCode::Unknown,                                       // 918
+    TypeCode::Unknown,                                       // 919
+    TypeCode::Unknown,                                       // 920
+    TypeCode::Unknown,                                       // 921
+    TypeCode::Unknown,                                       // 922
+    TypeCode::Unknown,                                       // 923
+    TypeCode::Unknown,                                       // 924
+    TypeCode::Unknown,                                       // 925
+    TypeCode::Unknown,                                       // 926
+    TypeCode::Unknown,                                       // 927
+    TypeCode::Unknown,                                       // 928
+    TypeCode::Unknown,                                       // 929
+    TypeCode::Unknown,                                       // 930
+    TypeCode::Unknown,                                       // 931
+    TypeCode::Unknown,                                       // 932
+    TypeCode::Unknown,                                       // 933
+    TypeCode::Unknown,                                       // 934
+    TypeCode::Unknown,                                       // 935
+    TypeCode::Unknown,                                       // 936
+    TypeCode::Unknown,                                       // 937
+    TypeCode::Unknown,                                       // 938
+    TypeCode::Unknown,                                       // 939
+    TypeCode::Unknown,                                       // 940
+    TypeCode::Unknown,                                       // 941
+    TypeCode::Unknown,                                       // 942
+    TypeCode::Unknown,                                       // 943
+    TypeCode::Unknown,                                       // 944
+    TypeCode::Unknown,                                       // 945
+    TypeCode::Unknown,                                       // 946
+    TypeCode::Unknown,                                       // 947
+    TypeCode::Unknown,                                       // 948
+    TypeCode::Unknown,                                       // 949
+    TypeCode::Unknown,                                       // 950
+    TypeCode::Unknown,                                       // 951
+    TypeCode::Unknown,                                       // 952
+    TypeCode::Unknown,                                       // 953
+    TypeCode::Unknown,                                       // 954
+    TypeCode::Unknown,                                       // 955
+    TypeCode::Unknown,                                       // 956
+    TypeCode::Unknown,                                       // 957
+    TypeCode::Unknown,                                       // 958
+    TypeCode::Unknown,                                       // 959
+    TypeCode::Unknown,                                       // 960
+    TypeCode::Unknown,                                       // 961
+    TypeCode::Unknown,                                       // 962
+    TypeCode::Unknown,                                       // 963
+    TypeCode::Unknown,                                       // 964
+    TypeCode::Unknown,                                       // 965
+    TypeCode::Unknown,                                       // 966
+    TypeCode::Unknown,                                       // 967
+    TypeCode::Unknown,                                       // 968
+    TypeCode::Unknown,                                       // 969
+    TypeCode::Unknown,                                       // 970
+    TypeCode::Unknown,                                       // 971
+    TypeCode::Unknown,                                       // 972
+    TypeCode::Unknown,                                       // 973
+    TypeCode::Unknown,                                       // 974
+    TypeCode::Unknown,                                       // 975
+    TypeCode::Unknown,                                       // 976
+    TypeCode::Unknown,                                       // 977
+    TypeCode::Unknown,                                       // 978
+    TypeCode::Unknown,                                       // 979
+    TypeCode::Unknown,                                       // 980
+    TypeCode::Unknown,                                       // 981
+    TypeCode::Unknown,                                       // 982
+    TypeCode::Unknown,                                       // 983
+    TypeCode::Unknown,                                       // 984
+    TypeCode::Unknown,                                       // 985
+    TypeCode::Unknown,                                       // 986
+    TypeCode::Unknown,                                       // 987
+    TypeCode::Unknown,                                       // 988
+    TypeCode::Unknown,                                       // 989
+    TypeCode::Unknown,                                       // 990
+    TypeCode::Unknown,                                       // 991
+    TypeCode::Unknown,                                       // 992
+    TypeCode::Unknown,                                       // 993
+    TypeCode::Unknown,                                       // 994
+    TypeCode::Unknown,                                       // 995
+    TypeCode::Unknown,                                       // 996
+    TypeCode::Unknown,                                       // 997
+    TypeCode::Unknown,                                       // 998
+    TypeCode::Unknown,                                       // 999
 ];
 
 impl From<&str> for TypeCode {
@@ -3929,11 +3975,17 @@ mod tests {
         assert_eq!(TypeCode::ClosingLedger.code(), "015");
         assert_eq!(TypeCode::from("020"), TypeCode::AverageClosingLedgerMtd);
         assert_eq!(TypeCode::AverageClosingLedgerMtd.code(), "020");
-        assert_eq!(TypeCode::from("021"), TypeCode::AverageClosingLedgerPreviousMonth);
+        assert_eq!(
+            TypeCode::from("021"),
+            TypeCode::AverageClosingLedgerPreviousMonth
+        );
         assert_eq!(TypeCode::AverageClosingLedgerPreviousMonth.code(), "021");
         assert_eq!(TypeCode::from("022"), TypeCode::AggregateBalanceAdjustments);
         assert_eq!(TypeCode::AggregateBalanceAdjustments.code(), "022");
-        assert_eq!(TypeCode::from("024"), TypeCode::AverageClosingLedgerYtdPreviousMonth);
+        assert_eq!(
+            TypeCode::from("024"),
+            TypeCode::AverageClosingLedgerYtdPreviousMonth
+        );
         assert_eq!(TypeCode::AverageClosingLedgerYtdPreviousMonth.code(), "024");
         assert_eq!(TypeCode::from("025"), TypeCode::AverageClosingLedgerYtd);
         assert_eq!(TypeCode::AverageClosingLedgerYtd.code(), "025");
@@ -3941,25 +3993,43 @@ mod tests {
         assert_eq!(TypeCode::CurrentLedger.code(), "030");
         assert_eq!(TypeCode::from("037"), TypeCode::AchNetPosition);
         assert_eq!(TypeCode::AchNetPosition.code(), "037");
-        assert_eq!(TypeCode::from("039"), TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit);
-        assert_eq!(TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit.code(), "039");
+        assert_eq!(
+            TypeCode::from("039"),
+            TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit
+        );
+        assert_eq!(
+            TypeCode::OpeningAvailableTotalSameDayAchDtcDeposit.code(),
+            "039"
+        );
         assert_eq!(TypeCode::from("040"), TypeCode::OpeningAvailable);
         assert_eq!(TypeCode::OpeningAvailable.code(), "040");
         assert_eq!(TypeCode::from("041"), TypeCode::AverageOpeningAvailableMtd);
         assert_eq!(TypeCode::AverageOpeningAvailableMtd.code(), "041");
         assert_eq!(TypeCode::from("042"), TypeCode::AverageOpeningAvailableYtd);
         assert_eq!(TypeCode::AverageOpeningAvailableYtd.code(), "042");
-        assert_eq!(TypeCode::from("043"), TypeCode::AverageAvailablePreviousMonth);
+        assert_eq!(
+            TypeCode::from("043"),
+            TypeCode::AverageAvailablePreviousMonth
+        );
         assert_eq!(TypeCode::AverageAvailablePreviousMonth.code(), "043");
-        assert_eq!(TypeCode::from("044"), TypeCode::DisbursingOpeningAvailableBalance);
+        assert_eq!(
+            TypeCode::from("044"),
+            TypeCode::DisbursingOpeningAvailableBalance
+        );
         assert_eq!(TypeCode::DisbursingOpeningAvailableBalance.code(), "044");
         assert_eq!(TypeCode::from("045"), TypeCode::ClosingAvailable);
         assert_eq!(TypeCode::ClosingAvailable.code(), "045");
         assert_eq!(TypeCode::from("050"), TypeCode::AverageClosingAvailableMtd);
         assert_eq!(TypeCode::AverageClosingAvailableMtd.code(), "050");
-        assert_eq!(TypeCode::from("051"), TypeCode::AverageClosingAvailableLastMonth);
+        assert_eq!(
+            TypeCode::from("051"),
+            TypeCode::AverageClosingAvailableLastMonth
+        );
         assert_eq!(TypeCode::AverageClosingAvailableLastMonth.code(), "051");
-        assert_eq!(TypeCode::from("054"), TypeCode::AverageClosingAvailableYtdLastMonth);
+        assert_eq!(
+            TypeCode::from("054"),
+            TypeCode::AverageClosingAvailableYtdLastMonth
+        );
         assert_eq!(TypeCode::AverageClosingAvailableYtdLastMonth.code(), "054");
         assert_eq!(TypeCode::from("055"), TypeCode::AverageClosingAvailableYtd);
         assert_eq!(TypeCode::AverageClosingAvailableYtd.code(), "055");
@@ -3967,7 +4037,10 @@ mod tests {
         assert_eq!(TypeCode::LoanBalance.code(), "056");
         assert_eq!(TypeCode::from("057"), TypeCode::TotalInvestmentPosition);
         assert_eq!(TypeCode::TotalInvestmentPosition.code(), "057");
-        assert_eq!(TypeCode::from("059"), TypeCode::CurrentAvailableCrsSupressed);
+        assert_eq!(
+            TypeCode::from("059"),
+            TypeCode::CurrentAvailableCrsSupressed
+        );
         assert_eq!(TypeCode::CurrentAvailableCrsSupressed.code(), "059");
         assert_eq!(TypeCode::from("060"), TypeCode::CurrentAvailable);
         assert_eq!(TypeCode::CurrentAvailable.code(), "060");
@@ -3997,9 +4070,15 @@ mod tests {
         assert_eq!(TypeCode::N3OrMoreDaysFloat.code(), "075");
         assert_eq!(TypeCode::from("076"), TypeCode::AdjustmentToBalances);
         assert_eq!(TypeCode::AdjustmentToBalances.code(), "076");
-        assert_eq!(TypeCode::from("077"), TypeCode::AverageAdjustmentToBalancesMtd);
+        assert_eq!(
+            TypeCode::from("077"),
+            TypeCode::AverageAdjustmentToBalancesMtd
+        );
         assert_eq!(TypeCode::AverageAdjustmentToBalancesMtd.code(), "077");
-        assert_eq!(TypeCode::from("078"), TypeCode::AverageAdjustmentToBalancesYtd);
+        assert_eq!(
+            TypeCode::from("078"),
+            TypeCode::AverageAdjustmentToBalancesYtd
+        );
         assert_eq!(TypeCode::AverageAdjustmentToBalancesYtd.code(), "078");
         assert_eq!(TypeCode::from("079"), TypeCode::N4DayFloat);
         assert_eq!(TypeCode::N4DayFloat.code(), "079");
@@ -4029,7 +4108,10 @@ mod tests {
         assert_eq!(TypeCode::TotalAdjustmentCreditsYtd.code(), "107");
         assert_eq!(TypeCode::from("108"), TypeCode::CreditAnyType);
         assert_eq!(TypeCode::CreditAnyType.code(), "108");
-        assert_eq!(TypeCode::from("109"), TypeCode::CurrentDayTotalLockboxDeposits);
+        assert_eq!(
+            TypeCode::from("109"),
+            TypeCode::CurrentDayTotalLockboxDeposits
+        );
         assert_eq!(TypeCode::CurrentDayTotalLockboxDeposits.code(), "109");
         assert_eq!(TypeCode::from("110"), TypeCode::TotalLockboxDeposits);
         assert_eq!(TypeCode::TotalLockboxDeposits.code(), "110");
@@ -4039,9 +4121,15 @@ mod tests {
         assert_eq!(TypeCode::ItemInLockboxDeposit.code(), "116");
         assert_eq!(TypeCode::from("118"), TypeCode::LockboxAdjustmentCredit);
         assert_eq!(TypeCode::LockboxAdjustmentCredit.code(), "118");
-        assert_eq!(TypeCode::from("120"), TypeCode::EdiTransactionCreditCrSummary);
+        assert_eq!(
+            TypeCode::from("120"),
+            TypeCode::EdiTransactionCreditCrSummary
+        );
         assert_eq!(TypeCode::EdiTransactionCreditCrSummary.code(), "120");
-        assert_eq!(TypeCode::from("121"), TypeCode::EdiTransactionCreditCrDetail);
+        assert_eq!(
+            TypeCode::from("121"),
+            TypeCode::EdiTransactionCreditCrDetail
+        );
         assert_eq!(TypeCode::EdiTransactionCreditCrDetail.code(), "121");
         assert_eq!(TypeCode::from("122"), TypeCode::EdibanxCreditReceived);
         assert_eq!(TypeCode::EdibanxCreditReceived.code(), "122");
@@ -4067,17 +4155,29 @@ mod tests {
         assert_eq!(TypeCode::TotalBankCardDeposits.code(), "146");
         assert_eq!(TypeCode::from("147"), TypeCode::IndividualBankCardDeposit);
         assert_eq!(TypeCode::IndividualBankCardDeposit.code(), "147");
-        assert_eq!(TypeCode::from("150"), TypeCode::TotalPreauthorizedPaymentCredits);
+        assert_eq!(
+            TypeCode::from("150"),
+            TypeCode::TotalPreauthorizedPaymentCredits
+        );
         assert_eq!(TypeCode::TotalPreauthorizedPaymentCredits.code(), "150");
         assert_eq!(TypeCode::from("155"), TypeCode::PreauthorizedDraftCredit);
         assert_eq!(TypeCode::PreauthorizedDraftCredit.code(), "155");
         assert_eq!(TypeCode::from("156"), TypeCode::ItemInPacDeposit);
         assert_eq!(TypeCode::ItemInPacDeposit.code(), "156");
-        assert_eq!(TypeCode::from("160"), TypeCode::TotalAchDisbursingFundingCredits);
+        assert_eq!(
+            TypeCode::from("160"),
+            TypeCode::TotalAchDisbursingFundingCredits
+        );
         assert_eq!(TypeCode::TotalAchDisbursingFundingCredits.code(), "160");
-        assert_eq!(TypeCode::from("162"), TypeCode::CorporateTradePaymentSettlementCr);
+        assert_eq!(
+            TypeCode::from("162"),
+            TypeCode::CorporateTradePaymentSettlementCr
+        );
         assert_eq!(TypeCode::CorporateTradePaymentSettlementCr.code(), "162");
-        assert_eq!(TypeCode::from("163"), TypeCode::CorporateTradePaymentCredits);
+        assert_eq!(
+            TypeCode::from("163"),
+            TypeCode::CorporateTradePaymentCredits
+        );
         assert_eq!(TypeCode::CorporateTradePaymentCredits.code(), "163");
         assert_eq!(TypeCode::from("164"), TypeCode::CorporateTradePaymentCredit);
         assert_eq!(TypeCode::CorporateTradePaymentCredit.code(), "164");
@@ -4087,8 +4187,14 @@ mod tests {
         assert_eq!(TypeCode::AchSettlementCr.code(), "166");
         assert_eq!(TypeCode::from("167"), TypeCode::AchSettlementCredits);
         assert_eq!(TypeCode::AchSettlementCredits.code(), "167");
-        assert_eq!(TypeCode::from("168"), TypeCode::AchReturnItemOrAdjustmentSettlementCr);
-        assert_eq!(TypeCode::AchReturnItemOrAdjustmentSettlementCr.code(), "168");
+        assert_eq!(
+            TypeCode::from("168"),
+            TypeCode::AchReturnItemOrAdjustmentSettlementCr
+        );
+        assert_eq!(
+            TypeCode::AchReturnItemOrAdjustmentSettlementCr.code(),
+            "168"
+        );
         assert_eq!(TypeCode::from("169"), TypeCode::MiscellaneousAchCredit);
         assert_eq!(TypeCode::MiscellaneousAchCredit.code(), "169");
         assert_eq!(TypeCode::from("170"), TypeCode::TotalOtherCheckDeposits);
@@ -4125,17 +4231,29 @@ mod tests {
         assert_eq!(TypeCode::CashLetterAdjustmentCr.code(), "189");
         assert_eq!(TypeCode::from("190"), TypeCode::TotalIncomingMoneyTransfers);
         assert_eq!(TypeCode::TotalIncomingMoneyTransfers.code(), "190");
-        assert_eq!(TypeCode::from("191"), TypeCode::IndividualIncomingInternalMoneyTransfer);
-        assert_eq!(TypeCode::IndividualIncomingInternalMoneyTransfer.code(), "191");
+        assert_eq!(
+            TypeCode::from("191"),
+            TypeCode::IndividualIncomingInternalMoneyTransfer
+        );
+        assert_eq!(
+            TypeCode::IndividualIncomingInternalMoneyTransfer.code(),
+            "191"
+        );
         assert_eq!(TypeCode::from("195"), TypeCode::IncomingMoneyTransfer);
         assert_eq!(TypeCode::IncomingMoneyTransfer.code(), "195");
         assert_eq!(TypeCode::from("196"), TypeCode::MoneyTransferAdjustmentCr);
         assert_eq!(TypeCode::MoneyTransferAdjustmentCr.code(), "196");
         assert_eq!(TypeCode::from("198"), TypeCode::CompensationCr);
         assert_eq!(TypeCode::CompensationCr.code(), "198");
-        assert_eq!(TypeCode::from("200"), TypeCode::TotalAutomaticTransferCredits);
+        assert_eq!(
+            TypeCode::from("200"),
+            TypeCode::TotalAutomaticTransferCredits
+        );
         assert_eq!(TypeCode::TotalAutomaticTransferCredits.code(), "200");
-        assert_eq!(TypeCode::from("201"), TypeCode::IndividualAutomaticTransferCredit);
+        assert_eq!(
+            TypeCode::from("201"),
+            TypeCode::IndividualAutomaticTransferCredit
+        );
         assert_eq!(TypeCode::IndividualAutomaticTransferCredit.code(), "201");
         assert_eq!(TypeCode::from("202"), TypeCode::BondOperationsCredit);
         assert_eq!(TypeCode::BondOperationsCredit.code(), "202");
@@ -4143,10 +4261,22 @@ mod tests {
         assert_eq!(TypeCode::TotalBookTransferCredits.code(), "205");
         assert_eq!(TypeCode::from("206"), TypeCode::BookTransferCredit);
         assert_eq!(TypeCode::BookTransferCredit.code(), "206");
-        assert_eq!(TypeCode::from("207"), TypeCode::TotalInternationalMoneyTransferCredits);
-        assert_eq!(TypeCode::TotalInternationalMoneyTransferCredits.code(), "207");
-        assert_eq!(TypeCode::from("208"), TypeCode::IndividualInternationalMoneyTransferCredit);
-        assert_eq!(TypeCode::IndividualInternationalMoneyTransferCredit.code(), "208");
+        assert_eq!(
+            TypeCode::from("207"),
+            TypeCode::TotalInternationalMoneyTransferCredits
+        );
+        assert_eq!(
+            TypeCode::TotalInternationalMoneyTransferCredits.code(),
+            "207"
+        );
+        assert_eq!(
+            TypeCode::from("208"),
+            TypeCode::IndividualInternationalMoneyTransferCredit
+        );
+        assert_eq!(
+            TypeCode::IndividualInternationalMoneyTransferCredit.code(),
+            "208"
+        );
         assert_eq!(TypeCode::from("210"), TypeCode::TotalInternationalCredits);
         assert_eq!(TypeCode::TotalInternationalCredits.code(), "210");
         assert_eq!(TypeCode::from("212"), TypeCode::ForeignLetterOfCredit);
@@ -4167,11 +4297,17 @@ mod tests {
         assert_eq!(TypeCode::ForeignChecksDeposited.code(), "222");
         assert_eq!(TypeCode::from("224"), TypeCode::CommissionCr);
         assert_eq!(TypeCode::CommissionCr.code(), "224");
-        assert_eq!(TypeCode::from("226"), TypeCode::InternationalMoneyMarketTradingCr);
+        assert_eq!(
+            TypeCode::from("226"),
+            TypeCode::InternationalMoneyMarketTradingCr
+        );
         assert_eq!(TypeCode::InternationalMoneyMarketTradingCr.code(), "226");
         assert_eq!(TypeCode::from("227"), TypeCode::StandingOrderCr);
         assert_eq!(TypeCode::StandingOrderCr.code(), "227");
-        assert_eq!(TypeCode::from("229"), TypeCode::MiscellaneousInternationalCredit);
+        assert_eq!(
+            TypeCode::from("229"),
+            TypeCode::MiscellaneousInternationalCredit
+        );
         assert_eq!(TypeCode::MiscellaneousInternationalCredit.code(), "229");
         assert_eq!(TypeCode::from("230"), TypeCode::TotalSecurityCredits);
         assert_eq!(TypeCode::TotalSecurityCredits.code(), "230");
@@ -4183,7 +4319,10 @@ mod tests {
         assert_eq!(TypeCode::SecuritiesSold.code(), "233");
         assert_eq!(TypeCode::from("234"), TypeCode::SaleOfEquitySecurity);
         assert_eq!(TypeCode::SaleOfEquitySecurity.code(), "234");
-        assert_eq!(TypeCode::from("235"), TypeCode::MaturedReverseRepurchaseOrder);
+        assert_eq!(
+            TypeCode::from("235"),
+            TypeCode::MaturedReverseRepurchaseOrder
+        );
         assert_eq!(TypeCode::MaturedReverseRepurchaseOrder.code(), "235");
         assert_eq!(TypeCode::from("236"), TypeCode::MaturityOfDebtSecurity);
         assert_eq!(TypeCode::MaturityOfDebtSecurity.code(), "236");
@@ -4191,7 +4330,10 @@ mod tests {
         assert_eq!(TypeCode::IndividualCollectionCredit.code(), "237");
         assert_eq!(TypeCode::from("238"), TypeCode::CollectionOfDividends);
         assert_eq!(TypeCode::CollectionOfDividends.code(), "238");
-        assert_eq!(TypeCode::from("239"), TypeCode::TotalBankersAcceptanceCredits);
+        assert_eq!(
+            TypeCode::from("239"),
+            TypeCode::TotalBankersAcceptanceCredits
+        );
         assert_eq!(TypeCode::TotalBankersAcceptanceCredits.code(), "239");
         assert_eq!(TypeCode::from("240"), TypeCode::CouponCollectionsBanks);
         assert_eq!(TypeCode::CouponCollectionsBanks.code(), "240");
@@ -4201,7 +4343,10 @@ mod tests {
         assert_eq!(TypeCode::CollectionOfInterestIncome.code(), "242");
         assert_eq!(TypeCode::from("243"), TypeCode::MaturedFedFundsPurchased);
         assert_eq!(TypeCode::MaturedFedFundsPurchased.code(), "243");
-        assert_eq!(TypeCode::from("244"), TypeCode::InterestMaturedPrincipalPaymentCr);
+        assert_eq!(
+            TypeCode::from("244"),
+            TypeCode::InterestMaturedPrincipalPaymentCr
+        );
         assert_eq!(TypeCode::InterestMaturedPrincipalPaymentCr.code(), "244");
         assert_eq!(TypeCode::from("245"), TypeCode::MonthlyDividends);
         assert_eq!(TypeCode::MonthlyDividends.code(), "245");
@@ -4209,17 +4354,26 @@ mod tests {
         assert_eq!(TypeCode::CommercialPaperCr.code(), "246");
         assert_eq!(TypeCode::from("247"), TypeCode::CapitalChangeCr);
         assert_eq!(TypeCode::CapitalChangeCr.code(), "247");
-        assert_eq!(TypeCode::from("248"), TypeCode::SavingsBondsSalesAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("248"),
+            TypeCode::SavingsBondsSalesAdjustmentCr
+        );
         assert_eq!(TypeCode::SavingsBondsSalesAdjustmentCr.code(), "248");
         assert_eq!(TypeCode::from("249"), TypeCode::MiscellaneousSecurityCredit);
         assert_eq!(TypeCode::MiscellaneousSecurityCredit.code(), "249");
-        assert_eq!(TypeCode::from("250"), TypeCode::TotalChecksPostedAndReturned);
+        assert_eq!(
+            TypeCode::from("250"),
+            TypeCode::TotalChecksPostedAndReturned
+        );
         assert_eq!(TypeCode::TotalChecksPostedAndReturned.code(), "250");
         assert_eq!(TypeCode::from("251"), TypeCode::TotalDebitReversals);
         assert_eq!(TypeCode::TotalDebitReversals.code(), "251");
         assert_eq!(TypeCode::from("252"), TypeCode::DebitReversal);
         assert_eq!(TypeCode::DebitReversal.code(), "252");
-        assert_eq!(TypeCode::from("254"), TypeCode::PostingErrorCorrectionCredit);
+        assert_eq!(
+            TypeCode::from("254"),
+            TypeCode::PostingErrorCorrectionCredit
+        );
         assert_eq!(TypeCode::PostingErrorCorrectionCredit.code(), "254");
         assert_eq!(TypeCode::from("255"), TypeCode::CheckPostedAndReturned);
         assert_eq!(TypeCode::CheckPostedAndReturned.code(), "255");
@@ -4243,7 +4397,10 @@ mod tests {
         assert_eq!(TypeCode::TotalZbaCredits.code(), "270");
         assert_eq!(TypeCode::from("271"), TypeCode::NetZeroBalanceAmount);
         assert_eq!(TypeCode::NetZeroBalanceAmount.code(), "271");
-        assert_eq!(TypeCode::from("274"), TypeCode::CumulativeZbaOrDisbursementCredits);
+        assert_eq!(
+            TypeCode::from("274"),
+            TypeCode::CumulativeZbaOrDisbursementCredits
+        );
         assert_eq!(TypeCode::CumulativeZbaOrDisbursementCredits.code(), "274");
         assert_eq!(TypeCode::from("275"), TypeCode::ZbaCredit);
         assert_eq!(TypeCode::ZbaCredit.code(), "275");
@@ -4253,13 +4410,22 @@ mod tests {
         assert_eq!(TypeCode::ZbaCreditTransfer.code(), "277");
         assert_eq!(TypeCode::from("278"), TypeCode::ZbaCreditAdjustment);
         assert_eq!(TypeCode::ZbaCreditAdjustment.code(), "278");
-        assert_eq!(TypeCode::from("280"), TypeCode::TotalControlledDisbursingCredits);
+        assert_eq!(
+            TypeCode::from("280"),
+            TypeCode::TotalControlledDisbursingCredits
+        );
         assert_eq!(TypeCode::TotalControlledDisbursingCredits.code(), "280");
-        assert_eq!(TypeCode::from("281"), TypeCode::IndividualControlledDisbursingCredit);
+        assert_eq!(
+            TypeCode::from("281"),
+            TypeCode::IndividualControlledDisbursingCredit
+        );
         assert_eq!(TypeCode::IndividualControlledDisbursingCredit.code(), "281");
         assert_eq!(TypeCode::from("285"), TypeCode::TotalDtcDisbursingCredits);
         assert_eq!(TypeCode::TotalDtcDisbursingCredits.code(), "285");
-        assert_eq!(TypeCode::from("286"), TypeCode::IndividualDtcDisbursingCredit);
+        assert_eq!(
+            TypeCode::from("286"),
+            TypeCode::IndividualDtcDisbursingCredit
+        );
         assert_eq!(TypeCode::IndividualDtcDisbursingCredit.code(), "286");
         assert_eq!(TypeCode::from("294"), TypeCode::TotalAtmCredits);
         assert_eq!(TypeCode::TotalAtmCredits.code(), "294");
@@ -4287,7 +4453,10 @@ mod tests {
         assert_eq!(TypeCode::TotalCommercialDeposits.code(), "310");
         assert_eq!(TypeCode::from("315"), TypeCode::TotalInternationalCreditsFf);
         assert_eq!(TypeCode::TotalInternationalCreditsFf.code(), "315");
-        assert_eq!(TypeCode::from("316"), TypeCode::TotalInternationalCreditsChf);
+        assert_eq!(
+            TypeCode::from("316"),
+            TypeCode::TotalInternationalCreditsChf
+        );
         assert_eq!(TypeCode::TotalInternationalCreditsChf.code(), "316");
         assert_eq!(TypeCode::from("318"), TypeCode::TotalForeignCheckPurchased);
         assert_eq!(TypeCode::TotalForeignCheckPurchased.code(), "318");
@@ -4313,10 +4482,22 @@ mod tests {
         assert_eq!(TypeCode::TotalEscrowCredits.code(), "330");
         assert_eq!(TypeCode::from("331"), TypeCode::IndividualEscrowCredit);
         assert_eq!(TypeCode::IndividualEscrowCredit.code(), "331");
-        assert_eq!(TypeCode::from("332"), TypeCode::TotalMiscellaneousSecuritiesCreditsFf);
-        assert_eq!(TypeCode::TotalMiscellaneousSecuritiesCreditsFf.code(), "332");
-        assert_eq!(TypeCode::from("336"), TypeCode::TotalMiscellaneousSecuritiesCreditsChf);
-        assert_eq!(TypeCode::TotalMiscellaneousSecuritiesCreditsChf.code(), "336");
+        assert_eq!(
+            TypeCode::from("332"),
+            TypeCode::TotalMiscellaneousSecuritiesCreditsFf
+        );
+        assert_eq!(
+            TypeCode::TotalMiscellaneousSecuritiesCreditsFf.code(),
+            "332"
+        );
+        assert_eq!(
+            TypeCode::from("336"),
+            TypeCode::TotalMiscellaneousSecuritiesCreditsChf
+        );
+        assert_eq!(
+            TypeCode::TotalMiscellaneousSecuritiesCreditsChf.code(),
+            "336"
+        );
         assert_eq!(TypeCode::from("338"), TypeCode::TotalSecuritiesSold);
         assert_eq!(TypeCode::TotalSecuritiesSold.code(), "338");
         assert_eq!(TypeCode::from("340"), TypeCode::TotalBrokerDeposits);
@@ -4359,13 +4540,28 @@ mod tests {
         assert_eq!(TypeCode::YtdAdjustmentCredit.code(), "358");
         assert_eq!(TypeCode::from("359"), TypeCode::InterestAdjustmentCredit);
         assert_eq!(TypeCode::InterestAdjustmentCredit.code(), "359");
-        assert_eq!(TypeCode::from("360"), TypeCode::TotalCreditsLessWireTransferAndReturnedChecks);
-        assert_eq!(TypeCode::TotalCreditsLessWireTransferAndReturnedChecks.code(), "360");
-        assert_eq!(TypeCode::from("361"), TypeCode::GrandTotalCreditsLessGrandTotalDebits);
-        assert_eq!(TypeCode::GrandTotalCreditsLessGrandTotalDebits.code(), "361");
+        assert_eq!(
+            TypeCode::from("360"),
+            TypeCode::TotalCreditsLessWireTransferAndReturnedChecks
+        );
+        assert_eq!(
+            TypeCode::TotalCreditsLessWireTransferAndReturnedChecks.code(),
+            "360"
+        );
+        assert_eq!(
+            TypeCode::from("361"),
+            TypeCode::GrandTotalCreditsLessGrandTotalDebits
+        );
+        assert_eq!(
+            TypeCode::GrandTotalCreditsLessGrandTotalDebits.code(),
+            "361"
+        );
         assert_eq!(TypeCode::from("362"), TypeCode::CorrespondentCollection);
         assert_eq!(TypeCode::CorrespondentCollection.code(), "362");
-        assert_eq!(TypeCode::from("363"), TypeCode::CorrespondentCollectionAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("363"),
+            TypeCode::CorrespondentCollectionAdjustmentCr
+        );
         assert_eq!(TypeCode::CorrespondentCollectionAdjustmentCr.code(), "363");
         assert_eq!(TypeCode::from("364"), TypeCode::LoanParticipationCr);
         assert_eq!(TypeCode::LoanParticipationCr.code(), "364");
@@ -4385,25 +4581,43 @@ mod tests {
         assert_eq!(TypeCode::CustomerPayrollCr.code(), "373");
         assert_eq!(TypeCode::from("374"), TypeCode::FrbStatementRecapCr);
         assert_eq!(TypeCode::FrbStatementRecapCr.code(), "374");
-        assert_eq!(TypeCode::from("376"), TypeCode::SavingsBondLetterOrAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("376"),
+            TypeCode::SavingsBondLetterOrAdjustmentCr
+        );
         assert_eq!(TypeCode::SavingsBondLetterOrAdjustmentCr.code(), "376");
         assert_eq!(TypeCode::from("377"), TypeCode::TreasuryTaxAndLoanCredit);
         assert_eq!(TypeCode::TreasuryTaxAndLoanCredit.code(), "377");
         assert_eq!(TypeCode::from("378"), TypeCode::TransferOfTreasuryCredit);
         assert_eq!(TypeCode::TransferOfTreasuryCredit.code(), "378");
-        assert_eq!(TypeCode::from("379"), TypeCode::FrbGovernmentChecksCashLetterCredit);
+        assert_eq!(
+            TypeCode::from("379"),
+            TypeCode::FrbGovernmentChecksCashLetterCredit
+        );
         assert_eq!(TypeCode::FrbGovernmentChecksCashLetterCredit.code(), "379");
-        assert_eq!(TypeCode::from("381"), TypeCode::FrbGovernmentCheckAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("381"),
+            TypeCode::FrbGovernmentCheckAdjustmentCr
+        );
         assert_eq!(TypeCode::FrbGovernmentCheckAdjustmentCr.code(), "381");
         assert_eq!(TypeCode::from("382"), TypeCode::FrbPostalMoneyOrderCredit);
         assert_eq!(TypeCode::FrbPostalMoneyOrderCredit.code(), "382");
-        assert_eq!(TypeCode::from("383"), TypeCode::FrbPostalMoneyOrderAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("383"),
+            TypeCode::FrbPostalMoneyOrderAdjustmentCr
+        );
         assert_eq!(TypeCode::FrbPostalMoneyOrderAdjustmentCr.code(), "383");
-        assert_eq!(TypeCode::from("384"), TypeCode::FrbCashLetterAutoChargeCredit);
+        assert_eq!(
+            TypeCode::from("384"),
+            TypeCode::FrbCashLetterAutoChargeCredit
+        );
         assert_eq!(TypeCode::FrbCashLetterAutoChargeCredit.code(), "384");
         assert_eq!(TypeCode::from("385"), TypeCode::TotalUniversalCredits);
         assert_eq!(TypeCode::TotalUniversalCredits.code(), "385");
-        assert_eq!(TypeCode::from("386"), TypeCode::FrbCashLetterAutoChargeAdjustmentCr);
+        assert_eq!(
+            TypeCode::from("386"),
+            TypeCode::FrbCashLetterAutoChargeAdjustmentCr
+        );
         assert_eq!(TypeCode::FrbCashLetterAutoChargeAdjustmentCr.code(), "386");
         assert_eq!(TypeCode::from("387"), TypeCode::FrbFineSortCashLetterCredit);
         assert_eq!(TypeCode::FrbFineSortCashLetterCredit.code(), "387");
@@ -4435,8 +4649,14 @@ mod tests {
         assert_eq!(TypeCode::TotalDebitAmountMtd.code(), "401");
         assert_eq!(TypeCode::from("403"), TypeCode::TodaySTotalDebits);
         assert_eq!(TypeCode::TodaySTotalDebits.code(), "403");
-        assert_eq!(TypeCode::from("405"), TypeCode::TotalDebitLessWireTransfersAndChargeBacks);
-        assert_eq!(TypeCode::TotalDebitLessWireTransfersAndChargeBacks.code(), "405");
+        assert_eq!(
+            TypeCode::from("405"),
+            TypeCode::TotalDebitLessWireTransfersAndChargeBacks
+        );
+        assert_eq!(
+            TypeCode::TotalDebitLessWireTransfersAndChargeBacks.code(),
+            "405"
+        );
         assert_eq!(TypeCode::from("406"), TypeCode::DebitsNotDetailed);
         assert_eq!(TypeCode::DebitsNotDetailed.code(), "406");
         assert_eq!(TypeCode::from("408"), TypeCode::FloatAdjustmentDb);
@@ -4445,7 +4665,10 @@ mod tests {
         assert_eq!(TypeCode::DebitAnyType.code(), "409");
         assert_eq!(TypeCode::from("410"), TypeCode::TotalYtdAdjustment);
         assert_eq!(TypeCode::TotalYtdAdjustment.code(), "410");
-        assert_eq!(TypeCode::from("412"), TypeCode::TotalDebitsExcludingReturnedItems);
+        assert_eq!(
+            TypeCode::from("412"),
+            TypeCode::TotalDebitsExcludingReturnedItems
+        );
         assert_eq!(TypeCode::TotalDebitsExcludingReturnedItems.code(), "412");
         assert_eq!(TypeCode::from("415"), TypeCode::LockboxDebit);
         assert_eq!(TypeCode::LockboxDebit.code(), "415");
@@ -4465,7 +4688,10 @@ mod tests {
         assert_eq!(TypeCode::PayableThroughDraft.code(), "435");
         assert_eq!(TypeCode::from("445"), TypeCode::AchConcentrationDebit);
         assert_eq!(TypeCode::AchConcentrationDebit.code(), "445");
-        assert_eq!(TypeCode::from("446"), TypeCode::TotalAchDisbursementFundingDebits);
+        assert_eq!(
+            TypeCode::from("446"),
+            TypeCode::TotalAchDisbursementFundingDebits
+        );
         assert_eq!(TypeCode::TotalAchDisbursementFundingDebits.code(), "446");
         assert_eq!(TypeCode::from("447"), TypeCode::AchDisbursementFundingDebit);
         assert_eq!(TypeCode::AchDisbursementFundingDebit.code(), "447");
@@ -4473,24 +4699,39 @@ mod tests {
         assert_eq!(TypeCode::TotalAchDebits.code(), "450");
         assert_eq!(TypeCode::from("451"), TypeCode::AchDebitReceived);
         assert_eq!(TypeCode::AchDebitReceived.code(), "451");
-        assert_eq!(TypeCode::from("452"), TypeCode::ItemInAchDisbursementOrDebit);
+        assert_eq!(
+            TypeCode::from("452"),
+            TypeCode::ItemInAchDisbursementOrDebit
+        );
         assert_eq!(TypeCode::ItemInAchDisbursementOrDebit.code(), "452");
         assert_eq!(TypeCode::from("455"), TypeCode::PreauthorizedAchDebit);
         assert_eq!(TypeCode::PreauthorizedAchDebit.code(), "455");
-        assert_eq!(TypeCode::from("462"), TypeCode::AccountHolderInitiatedAchDebit);
+        assert_eq!(
+            TypeCode::from("462"),
+            TypeCode::AccountHolderInitiatedAchDebit
+        );
         assert_eq!(TypeCode::AccountHolderInitiatedAchDebit.code(), "462");
         assert_eq!(TypeCode::from("463"), TypeCode::CorporateTradePaymentDebits);
         assert_eq!(TypeCode::CorporateTradePaymentDebits.code(), "463");
         assert_eq!(TypeCode::from("464"), TypeCode::CorporateTradePaymentDebit);
         assert_eq!(TypeCode::CorporateTradePaymentDebit.code(), "464");
-        assert_eq!(TypeCode::from("465"), TypeCode::CorporateTradePaymentSettlementDb);
+        assert_eq!(
+            TypeCode::from("465"),
+            TypeCode::CorporateTradePaymentSettlementDb
+        );
         assert_eq!(TypeCode::CorporateTradePaymentSettlementDb.code(), "465");
         assert_eq!(TypeCode::from("466"), TypeCode::AchSettlementDb);
         assert_eq!(TypeCode::AchSettlementDb.code(), "466");
         assert_eq!(TypeCode::from("467"), TypeCode::AchSettlementDebits);
         assert_eq!(TypeCode::AchSettlementDebits.code(), "467");
-        assert_eq!(TypeCode::from("468"), TypeCode::AchReturnItemOrAdjustmentSettlementDb);
-        assert_eq!(TypeCode::AchReturnItemOrAdjustmentSettlementDb.code(), "468");
+        assert_eq!(
+            TypeCode::from("468"),
+            TypeCode::AchReturnItemOrAdjustmentSettlementDb
+        );
+        assert_eq!(
+            TypeCode::AchReturnItemOrAdjustmentSettlementDb.code(),
+            "468"
+        );
         assert_eq!(TypeCode::from("469"), TypeCode::MiscellaneousAchDebit);
         assert_eq!(TypeCode::MiscellaneousAchDebit.code(), "469");
         assert_eq!(TypeCode::from("470"), TypeCode::TotalCheckPaid);
@@ -4503,7 +4744,10 @@ mod tests {
         assert_eq!(TypeCode::CertifiedCheckDebit.code(), "474");
         assert_eq!(TypeCode::from("475"), TypeCode::CheckPaid);
         assert_eq!(TypeCode::CheckPaid.code(), "475");
-        assert_eq!(TypeCode::from("476"), TypeCode::FederalReserveBankLetterDebit);
+        assert_eq!(
+            TypeCode::from("476"),
+            TypeCode::FederalReserveBankLetterDebit
+        );
         assert_eq!(TypeCode::FederalReserveBankLetterDebit.code(), "476");
         assert_eq!(TypeCode::from("477"), TypeCode::BankOriginatedDebit);
         assert_eq!(TypeCode::BankOriginatedDebit.code(), "477");
@@ -4529,19 +4773,37 @@ mod tests {
         assert_eq!(TypeCode::CashLetterAdjustmentDb.code(), "489");
         assert_eq!(TypeCode::from("490"), TypeCode::TotalOutgoingMoneyTransfers);
         assert_eq!(TypeCode::TotalOutgoingMoneyTransfers.code(), "490");
-        assert_eq!(TypeCode::from("491"), TypeCode::IndividualOutgoingInternalMoneyTransfer);
-        assert_eq!(TypeCode::IndividualOutgoingInternalMoneyTransfer.code(), "491");
-        assert_eq!(TypeCode::from("493"), TypeCode::CustomerTerminalInitiatedMoneyTransfer);
-        assert_eq!(TypeCode::CustomerTerminalInitiatedMoneyTransfer.code(), "493");
+        assert_eq!(
+            TypeCode::from("491"),
+            TypeCode::IndividualOutgoingInternalMoneyTransfer
+        );
+        assert_eq!(
+            TypeCode::IndividualOutgoingInternalMoneyTransfer.code(),
+            "491"
+        );
+        assert_eq!(
+            TypeCode::from("493"),
+            TypeCode::CustomerTerminalInitiatedMoneyTransfer
+        );
+        assert_eq!(
+            TypeCode::CustomerTerminalInitiatedMoneyTransfer.code(),
+            "493"
+        );
         assert_eq!(TypeCode::from("495"), TypeCode::OutgoingMoneyTransfer);
         assert_eq!(TypeCode::OutgoingMoneyTransfer.code(), "495");
         assert_eq!(TypeCode::from("496"), TypeCode::MoneyTransferAdjustmentDb);
         assert_eq!(TypeCode::MoneyTransferAdjustmentDb.code(), "496");
         assert_eq!(TypeCode::from("498"), TypeCode::CompensationDb);
         assert_eq!(TypeCode::CompensationDb.code(), "498");
-        assert_eq!(TypeCode::from("500"), TypeCode::TotalAutomaticTransferDebits);
+        assert_eq!(
+            TypeCode::from("500"),
+            TypeCode::TotalAutomaticTransferDebits
+        );
         assert_eq!(TypeCode::TotalAutomaticTransferDebits.code(), "500");
-        assert_eq!(TypeCode::from("501"), TypeCode::IndividualAutomaticTransferDebit);
+        assert_eq!(
+            TypeCode::from("501"),
+            TypeCode::IndividualAutomaticTransferDebit
+        );
         assert_eq!(TypeCode::IndividualAutomaticTransferDebit.code(), "501");
         assert_eq!(TypeCode::from("502"), TypeCode::BondOperationsDebit);
         assert_eq!(TypeCode::BondOperationsDebit.code(), "502");
@@ -4549,10 +4811,22 @@ mod tests {
         assert_eq!(TypeCode::TotalBookTransferDebits.code(), "505");
         assert_eq!(TypeCode::from("506"), TypeCode::BookTransferDebit);
         assert_eq!(TypeCode::BookTransferDebit.code(), "506");
-        assert_eq!(TypeCode::from("507"), TypeCode::TotalInternationalMoneyTransferDebits);
-        assert_eq!(TypeCode::TotalInternationalMoneyTransferDebits.code(), "507");
-        assert_eq!(TypeCode::from("508"), TypeCode::IndividualInternationalMoneyTransferDebits);
-        assert_eq!(TypeCode::IndividualInternationalMoneyTransferDebits.code(), "508");
+        assert_eq!(
+            TypeCode::from("507"),
+            TypeCode::TotalInternationalMoneyTransferDebits
+        );
+        assert_eq!(
+            TypeCode::TotalInternationalMoneyTransferDebits.code(),
+            "507"
+        );
+        assert_eq!(
+            TypeCode::from("508"),
+            TypeCode::IndividualInternationalMoneyTransferDebits
+        );
+        assert_eq!(
+            TypeCode::IndividualInternationalMoneyTransferDebits.code(),
+            "508"
+        );
         assert_eq!(TypeCode::from("510"), TypeCode::TotalInternationalDebits);
         assert_eq!(TypeCode::TotalInternationalDebits.code(), "510");
         assert_eq!(TypeCode::from("512"), TypeCode::LetterOfCreditDebit);
@@ -4571,31 +4845,49 @@ mod tests {
         assert_eq!(TypeCode::ForeignChecksPaid.code(), "522");
         assert_eq!(TypeCode::from("524"), TypeCode::CommissionDb);
         assert_eq!(TypeCode::CommissionDb.code(), "524");
-        assert_eq!(TypeCode::from("526"), TypeCode::InternationalMoneyMarketTradingDb);
+        assert_eq!(
+            TypeCode::from("526"),
+            TypeCode::InternationalMoneyMarketTradingDb
+        );
         assert_eq!(TypeCode::InternationalMoneyMarketTradingDb.code(), "526");
         assert_eq!(TypeCode::from("527"), TypeCode::StandingOrderDb);
         assert_eq!(TypeCode::StandingOrderDb.code(), "527");
-        assert_eq!(TypeCode::from("529"), TypeCode::MiscellaneousInternationalDebit);
+        assert_eq!(
+            TypeCode::from("529"),
+            TypeCode::MiscellaneousInternationalDebit
+        );
         assert_eq!(TypeCode::MiscellaneousInternationalDebit.code(), "529");
         assert_eq!(TypeCode::from("530"), TypeCode::TotalSecurityDebits);
         assert_eq!(TypeCode::TotalSecurityDebits.code(), "530");
         assert_eq!(TypeCode::from("531"), TypeCode::SecuritiesPurchased);
         assert_eq!(TypeCode::SecuritiesPurchased.code(), "531");
-        assert_eq!(TypeCode::from("532"), TypeCode::TotalAmountOfSecuritiesPurchased);
+        assert_eq!(
+            TypeCode::from("532"),
+            TypeCode::TotalAmountOfSecuritiesPurchased
+        );
         assert_eq!(TypeCode::TotalAmountOfSecuritiesPurchased.code(), "532");
         assert_eq!(TypeCode::from("533"), TypeCode::SecurityCollectionDebit);
         assert_eq!(TypeCode::SecurityCollectionDebit.code(), "533");
-        assert_eq!(TypeCode::from("534"), TypeCode::TotalMiscellaneousSecuritiesDbFf);
+        assert_eq!(
+            TypeCode::from("534"),
+            TypeCode::TotalMiscellaneousSecuritiesDbFf
+        );
         assert_eq!(TypeCode::TotalMiscellaneousSecuritiesDbFf.code(), "534");
         assert_eq!(TypeCode::from("535"), TypeCode::PurchaseOfEquitySecurities);
         assert_eq!(TypeCode::PurchaseOfEquitySecurities.code(), "535");
-        assert_eq!(TypeCode::from("536"), TypeCode::TotalMiscellaneousSecuritiesDebitChf);
+        assert_eq!(
+            TypeCode::from("536"),
+            TypeCode::TotalMiscellaneousSecuritiesDebitChf
+        );
         assert_eq!(TypeCode::TotalMiscellaneousSecuritiesDebitChf.code(), "536");
         assert_eq!(TypeCode::from("537"), TypeCode::TotalCollectionDebit);
         assert_eq!(TypeCode::TotalCollectionDebit.code(), "537");
         assert_eq!(TypeCode::from("538"), TypeCode::MaturedRepurchaseOrder);
         assert_eq!(TypeCode::MaturedRepurchaseOrder.code(), "538");
-        assert_eq!(TypeCode::from("539"), TypeCode::TotalBankersAcceptancesDebit);
+        assert_eq!(
+            TypeCode::from("539"),
+            TypeCode::TotalBankersAcceptancesDebit
+        );
         assert_eq!(TypeCode::TotalBankersAcceptancesDebit.code(), "539");
         assert_eq!(TypeCode::from("540"), TypeCode::CouponCollectionDebit);
         assert_eq!(TypeCode::CouponCollectionDebit.code(), "540");
@@ -4605,13 +4897,19 @@ mod tests {
         assert_eq!(TypeCode::PurchaseOfDebtSecurities.code(), "542");
         assert_eq!(TypeCode::from("543"), TypeCode::DomesticCollection);
         assert_eq!(TypeCode::DomesticCollection.code(), "543");
-        assert_eq!(TypeCode::from("544"), TypeCode::InterestMaturedPrincipalPaymentDb);
+        assert_eq!(
+            TypeCode::from("544"),
+            TypeCode::InterestMaturedPrincipalPaymentDb
+        );
         assert_eq!(TypeCode::InterestMaturedPrincipalPaymentDb.code(), "544");
         assert_eq!(TypeCode::from("546"), TypeCode::CommercialPaperDb);
         assert_eq!(TypeCode::CommercialPaperDb.code(), "546");
         assert_eq!(TypeCode::from("547"), TypeCode::CapitalChangeDb);
         assert_eq!(TypeCode::CapitalChangeDb.code(), "547");
-        assert_eq!(TypeCode::from("548"), TypeCode::SavingsBondsSalesAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("548"),
+            TypeCode::SavingsBondsSalesAdjustmentDb
+        );
         assert_eq!(TypeCode::SavingsBondsSalesAdjustmentDb.code(), "548");
         assert_eq!(TypeCode::from("549"), TypeCode::MiscellaneousSecurityDebit);
         assert_eq!(TypeCode::MiscellaneousSecurityDebit.code(), "549");
@@ -4655,21 +4953,42 @@ mod tests {
         assert_eq!(TypeCode::ZbaDebitTransfer.code(), "577");
         assert_eq!(TypeCode::from("578"), TypeCode::ZbaDebitAdjustment);
         assert_eq!(TypeCode::ZbaDebitAdjustment.code(), "578");
-        assert_eq!(TypeCode::from("580"), TypeCode::TotalControlledDisbursingDebits);
+        assert_eq!(
+            TypeCode::from("580"),
+            TypeCode::TotalControlledDisbursingDebits
+        );
         assert_eq!(TypeCode::TotalControlledDisbursingDebits.code(), "580");
-        assert_eq!(TypeCode::from("581"), TypeCode::IndividualControlledDisbursingDebit);
+        assert_eq!(
+            TypeCode::from("581"),
+            TypeCode::IndividualControlledDisbursingDebit
+        );
         assert_eq!(TypeCode::IndividualControlledDisbursingDebit.code(), "581");
-        assert_eq!(TypeCode::from("583"), TypeCode::TotalDisbursingChecksPaidEarlyAmount);
+        assert_eq!(
+            TypeCode::from("583"),
+            TypeCode::TotalDisbursingChecksPaidEarlyAmount
+        );
         assert_eq!(TypeCode::TotalDisbursingChecksPaidEarlyAmount.code(), "583");
-        assert_eq!(TypeCode::from("584"), TypeCode::TotalDisbursingChecksPaidLaterAmount);
+        assert_eq!(
+            TypeCode::from("584"),
+            TypeCode::TotalDisbursingChecksPaidLaterAmount
+        );
         assert_eq!(TypeCode::TotalDisbursingChecksPaidLaterAmount.code(), "584");
-        assert_eq!(TypeCode::from("585"), TypeCode::DisbursingFundingRequirement);
+        assert_eq!(
+            TypeCode::from("585"),
+            TypeCode::DisbursingFundingRequirement
+        );
         assert_eq!(TypeCode::DisbursingFundingRequirement.code(), "585");
-        assert_eq!(TypeCode::from("586"), TypeCode::FrbPresentmentEstimateFedEstimate);
+        assert_eq!(
+            TypeCode::from("586"),
+            TypeCode::FrbPresentmentEstimateFedEstimate
+        );
         assert_eq!(TypeCode::FrbPresentmentEstimateFedEstimate.code(), "586");
         assert_eq!(TypeCode::from("587"), TypeCode::LateDebitsAfterNotification);
         assert_eq!(TypeCode::LateDebitsAfterNotification.code(), "587");
-        assert_eq!(TypeCode::from("588"), TypeCode::TotalDisbursingChecksPaidLastAmount);
+        assert_eq!(
+            TypeCode::from("588"),
+            TypeCode::TotalDisbursingChecksPaidLastAmount
+        );
         assert_eq!(TypeCode::TotalDisbursingChecksPaidLastAmount.code(), "588");
         assert_eq!(TypeCode::from("590"), TypeCode::TotalDtcDebits);
         assert_eq!(TypeCode::TotalDtcDebits.code(), "590");
@@ -4695,10 +5014,22 @@ mod tests {
         assert_eq!(TypeCode::TotalInternationalDebitChf.code(), "613");
         assert_eq!(TypeCode::from("614"), TypeCode::TotalInternationalDebitFf);
         assert_eq!(TypeCode::TotalInternationalDebitFf.code(), "614");
-        assert_eq!(TypeCode::from("615"), TypeCode::TotalFederalReserveBankCommercialBankDebit);
-        assert_eq!(TypeCode::TotalFederalReserveBankCommercialBankDebit.code(), "615");
-        assert_eq!(TypeCode::from("616"), TypeCode::FederalReserveBankCommercialBankDebit);
-        assert_eq!(TypeCode::FederalReserveBankCommercialBankDebit.code(), "616");
+        assert_eq!(
+            TypeCode::from("615"),
+            TypeCode::TotalFederalReserveBankCommercialBankDebit
+        );
+        assert_eq!(
+            TypeCode::TotalFederalReserveBankCommercialBankDebit.code(),
+            "615"
+        );
+        assert_eq!(
+            TypeCode::from("616"),
+            TypeCode::FederalReserveBankCommercialBankDebit
+        );
+        assert_eq!(
+            TypeCode::FederalReserveBankCommercialBankDebit.code(),
+            "616"
+        );
         assert_eq!(TypeCode::from("617"), TypeCode::TotalSecuritiesPurchasedChf);
         assert_eq!(TypeCode::TotalSecuritiesPurchasedChf.code(), "617");
         assert_eq!(TypeCode::from("618"), TypeCode::TotalSecuritiesPurchasedFf);
@@ -4739,11 +5070,17 @@ mod tests {
         assert_eq!(TypeCode::TransferCalculationDebit.code(), "646");
         assert_eq!(TypeCode::from("650"), TypeCode::InvestmentsPurchased);
         assert_eq!(TypeCode::InvestmentsPurchased.code(), "650");
-        assert_eq!(TypeCode::from("651"), TypeCode::IndividualInvestmentPurchased);
+        assert_eq!(
+            TypeCode::from("651"),
+            TypeCode::IndividualInvestmentPurchased
+        );
         assert_eq!(TypeCode::IndividualInvestmentPurchased.code(), "651");
         assert_eq!(TypeCode::from("654"), TypeCode::InterestDebit);
         assert_eq!(TypeCode::InterestDebit.code(), "654");
-        assert_eq!(TypeCode::from("655"), TypeCode::TotalInvestmentInterestDebits);
+        assert_eq!(
+            TypeCode::from("655"),
+            TypeCode::TotalInvestmentInterestDebits
+        );
         assert_eq!(TypeCode::TotalInvestmentInterestDebits.code(), "655");
         assert_eq!(TypeCode::from("656"), TypeCode::SweepPrincipalBuy);
         assert_eq!(TypeCode::SweepPrincipalBuy.code(), "656");
@@ -4755,9 +5092,15 @@ mod tests {
         assert_eq!(TypeCode::InterestAdjustmentDebit.code(), "659");
         assert_eq!(TypeCode::from("661"), TypeCode::AccountAnalysisFee);
         assert_eq!(TypeCode::AccountAnalysisFee.code(), "661");
-        assert_eq!(TypeCode::from("662"), TypeCode::CorrespondentCollectionDebit);
+        assert_eq!(
+            TypeCode::from("662"),
+            TypeCode::CorrespondentCollectionDebit
+        );
         assert_eq!(TypeCode::CorrespondentCollectionDebit.code(), "662");
-        assert_eq!(TypeCode::from("663"), TypeCode::CorrespondentCollectionAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("663"),
+            TypeCode::CorrespondentCollectionAdjustmentDb
+        );
         assert_eq!(TypeCode::CorrespondentCollectionAdjustmentDb.code(), "663");
         assert_eq!(TypeCode::from("664"), TypeCode::LoanParticipationDb);
         assert_eq!(TypeCode::LoanParticipationDb.code(), "664");
@@ -4779,25 +5122,43 @@ mod tests {
         assert_eq!(TypeCode::CustomerPayrollDb.code(), "673");
         assert_eq!(TypeCode::from("674"), TypeCode::FrbStatementRecapDb);
         assert_eq!(TypeCode::FrbStatementRecapDb.code(), "674");
-        assert_eq!(TypeCode::from("676"), TypeCode::SavingsBondLetterOrAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("676"),
+            TypeCode::SavingsBondLetterOrAdjustmentDb
+        );
         assert_eq!(TypeCode::SavingsBondLetterOrAdjustmentDb.code(), "676");
         assert_eq!(TypeCode::from("677"), TypeCode::TreasuryTaxAndLoanDebit);
         assert_eq!(TypeCode::TreasuryTaxAndLoanDebit.code(), "677");
         assert_eq!(TypeCode::from("678"), TypeCode::TransferOfTreasuryDebit);
         assert_eq!(TypeCode::TransferOfTreasuryDebit.code(), "678");
-        assert_eq!(TypeCode::from("679"), TypeCode::FrbGovernmentChecksCashLetterDebit);
+        assert_eq!(
+            TypeCode::from("679"),
+            TypeCode::FrbGovernmentChecksCashLetterDebit
+        );
         assert_eq!(TypeCode::FrbGovernmentChecksCashLetterDebit.code(), "679");
-        assert_eq!(TypeCode::from("681"), TypeCode::FrbGovernmentCheckAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("681"),
+            TypeCode::FrbGovernmentCheckAdjustmentDb
+        );
         assert_eq!(TypeCode::FrbGovernmentCheckAdjustmentDb.code(), "681");
         assert_eq!(TypeCode::from("682"), TypeCode::FrbPostalMoneyOrderDebit);
         assert_eq!(TypeCode::FrbPostalMoneyOrderDebit.code(), "682");
-        assert_eq!(TypeCode::from("683"), TypeCode::FrbPostalMoneyOrderAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("683"),
+            TypeCode::FrbPostalMoneyOrderAdjustmentDb
+        );
         assert_eq!(TypeCode::FrbPostalMoneyOrderAdjustmentDb.code(), "683");
-        assert_eq!(TypeCode::from("684"), TypeCode::FrbCashLetterAutoChargeDebit);
+        assert_eq!(
+            TypeCode::from("684"),
+            TypeCode::FrbCashLetterAutoChargeDebit
+        );
         assert_eq!(TypeCode::FrbCashLetterAutoChargeDebit.code(), "684");
         assert_eq!(TypeCode::from("685"), TypeCode::TotalUniversalDebits);
         assert_eq!(TypeCode::TotalUniversalDebits.code(), "685");
-        assert_eq!(TypeCode::from("686"), TypeCode::FrbCashLetterAutoChargeAdjustmentDb);
+        assert_eq!(
+            TypeCode::from("686"),
+            TypeCode::FrbCashLetterAutoChargeAdjustmentDb
+        );
         assert_eq!(TypeCode::FrbCashLetterAutoChargeAdjustmentDb.code(), "686");
         assert_eq!(TypeCode::from("687"), TypeCode::FrbFineSortCashLetterDebit);
         assert_eq!(TypeCode::FrbFineSortCashLetterDebit.code(), "687");
@@ -4849,13 +5210,25 @@ mod tests {
         assert_eq!(TypeCode::AmountAppliedToBuydown.code(), "725");
         assert_eq!(TypeCode::from("726"), TypeCode::AmountAppliedToMiscFees);
         assert_eq!(TypeCode::AmountAppliedToMiscFees.code(), "726");
-        assert_eq!(TypeCode::from("727"), TypeCode::AmountAppliedToDeferredInterestDetail);
-        assert_eq!(TypeCode::AmountAppliedToDeferredInterestDetail.code(), "727");
-        assert_eq!(TypeCode::from("728"), TypeCode::AmountAppliedToServiceCharge);
+        assert_eq!(
+            TypeCode::from("727"),
+            TypeCode::AmountAppliedToDeferredInterestDetail
+        );
+        assert_eq!(
+            TypeCode::AmountAppliedToDeferredInterestDetail.code(),
+            "727"
+        );
+        assert_eq!(
+            TypeCode::from("728"),
+            TypeCode::AmountAppliedToServiceCharge
+        );
         assert_eq!(TypeCode::AmountAppliedToServiceCharge.code(), "728");
         assert_eq!(TypeCode::from("760"), TypeCode::LoanDisbursement);
         assert_eq!(TypeCode::LoanDisbursement.code(), "760");
-        assert_eq!(TypeCode::from("890"), TypeCode::ContainsNonMonetaryInformation);
+        assert_eq!(
+            TypeCode::from("890"),
+            TypeCode::ContainsNonMonetaryInformation
+        );
         assert_eq!(TypeCode::ContainsNonMonetaryInformation.code(), "890");
     }
 }

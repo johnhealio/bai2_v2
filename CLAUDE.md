@@ -26,7 +26,7 @@ design unless the user explicitly asks; treat its `docs/*.md` as settled.
 | 1 | Initialize Rust Project and TYPE_CODE | Done — `src/type_code.rs`, `docs/TYPE_CODE.md` |
 | 2 | FUND_TYPE | Done — `src/funds_type.rs`, `docs/FUND_TYPE.md` |
 | 3 | CURRENCY_CODE | Done — `src/currency_code.rs`, `docs/CURRENCY_CODE.md` |
-| 4 | TRANSACTION_DETAIL (record type 16) | Not started — spec in `docs/TRANSACTION_DETAIL.md` |
+| 4 | TRANSACTION_DETAIL (record type 16) | Done — `src/transaction_detail.rs`, `docs/TRANSACTION_DETAIL.md` |
 
 ## Conventions established so far
 

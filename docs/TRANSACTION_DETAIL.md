@@ -83,7 +83,8 @@ handling.
 ```rust
 pub struct TransactionDetail {
     pub type_code: TypeCode,
-    pub amount: Option<u64>,
+    pub amount: Option<u64>,       // raw minor units, e.g. cents; None if defaulted
+    pub currency: CurrencyCode,    // threaded through, not parsed from this record
     pub funds_type: FundsType,
     pub bank_reference_number: Option<String>,
     pub customer_reference_number: Option<String>,
@@ -91,14 +92,12 @@ pub struct TransactionDetail {
 }
 
 pub enum TransactionDetailError {
-    // e.g.: wrong record code, missing required Type Code field,
-    // invalid Amount (non-numeric, or the field's number of digits
-    // implies a value that doesn't fit u64), a FundsTypeError bubbled
-    // up from parsing the Funds Type composite field, a reference
-    // number or Text field containing a delimiter it shouldn't, etc.
-    // Exact variants are an implementation decision within this
-    // module — keep the same style as FundsTypeError (docs/FUND_TYPE.md):
-    // specific, named failure cases rather than one generic "parse error".
+    WrongRecordCode(String),       // fields[0] wasn't literally "16"
+    MissingTypeCode,               // Type Code field was blank or absent
+    InvalidAmount(String),         // Amount wasn't a valid non-negative integer
+    FundsType(FundsTypeError),     // bubbled up from FundsType::parse
+    InvalidReferenceNumber { field: &'static str, value: String }, // '/' in a reference number
+    TextStartsWithSlash(String),
 }
 ```
 
@@ -107,12 +106,57 @@ pub enum TransactionDetailError {
 - `TransactionDetail::new(line: &str, currency: CurrencyCode) ->
   Result<TransactionDetail, TransactionDetailError>` — parses one already-
   isolated 16 record line (no leading/trailing continuation handling).
-  `currency` supplies the implied-decimal count for the Amount field via
-  `CurrencyCode::decimals` — it comes from the enclosing Group/Account
-  record's Currency Code field, not from anything in the 16 record itself.
+  `currency` is attached to the result as `TransactionDetail.currency` so
+  callers have `amount` and the currency it's denominated in together,
+  without re-threading it from elsewhere — see "Currency's actual role"
+  below for why this is *not* the same as needing `decimals()` to parse
+  the integer itself.
 
 ## Decisions & Edge Cases
 
+- **Currency's actual role: attached for the caller's benefit, not consumed
+  by parsing.** The Amount field is "expressed without a decimal" — the raw
+  digits on the line already *are* the integer minor-unit value, so
+  extracting `amount: Option<u64>` never needs `CurrencyCode::decimals()`.
+  `currency` is still a required `new()` parameter and a struct field so
+  that `amount` and the currency it's denominated in travel together
+  without the caller re-plumbing it from the enclosing Group/Account
+  record — useful groundwork for a future display/decimal-conversion
+  helper (deliberately not built yet, see below), not something the
+  current parsing logic branches on.
+- **A single leading `/` strip handles the whole "record may or may not
+  end in Text" ambiguity.** Per spec, a record ending in Text has *no*
+  trailing delimiter at all, while a record with Text defaulted (or with
+  trailing optional fields entirely truncated off the line, which real
+  sample records do — see below) ends in `/`. Since `/` never legitimately
+  terminates a *populated* Text field this way, it's correct to
+  unconditionally strip one trailing `/` from the whole line before
+  splitting on `,` — this also fixes the more subtle problem that,
+  without stripping it first, the `/` would otherwise be glued (no comma)
+  onto whatever the actual last data token is (e.g. `...,1000000/` would
+  make the last Funds Type amount parse as `"1000000/"`, not `"1000000"`).
+- **Trailing optional fields may be truncated off the line entirely, not
+  just left blank via adjacent commas.** The spec's own field-delimiter
+  rules say a defaulted trailing field "cannot be left off but must be
+  indicated by adjacent delimiters," but the spec's own Appendix D sample
+  transmissions don't follow that — e.g. `16,115,10000000,S,5000000,
+  4000000,1000000/` has no trailing commas at all for the omitted Bank
+  Reference Number, Customer Reference Number, and Text. Parsing treats
+  "no more fields present" identically to "fields present but blank": all
+  of Funds Type (defaults to `Unknown`, not a `FundsTypeError::Empty`),
+  Bank/Customer Reference Number, and Text resolve to their default/`None`
+  when the line simply doesn't extend that far, via bounds-checked
+  (`Vec::get`) access rather than requiring a minimum field count.
+- **Text reconstruction after a naive full-line comma split.** Because
+  Text may itself contain `,`, the line is still split on every `,` up
+  front (simplest approach), and the *known* number of leading positional
+  fields — fixed except for Funds Type's variable width, which
+  `FundsType::parse`'s returned consumed-count supplies — tells us exactly
+  where Text starts. Everything from that index onward is rejoined with
+  `,`, exactly reconstructing the original substring including any
+  embedded commas/slashes. A tail where every remaining element is empty
+  (however many trailing empty commas there are) is treated as "no text,"
+  not `Some("")` or `Some(",")`.
 - **Reuse `TypeCode` and `FundsType` as-is; don't re-derive their parsing
   logic.** `TypeCode::from` is infallible (`Unknown` for anything
   undefined), so an unrecognized 3-digit Type Code in a 16 record is not,
@@ -148,20 +192,37 @@ pub enum TransactionDetailError {
 ## Testing Expectations
 
 - A normal record with a plain (no-sub-field) Funds Type, e.g.
-  `16,165,1500000,1,DD1620,,DEALER PAYMENTS`, parses every field correctly,
-  including a non-numeric-suffix Text value with no trailing delimiter.
-- A record with an `S` or `D` Funds Type composite (e.g.
-  `16,115,10000000,S,5000000,4000000,1000000/`) parses correctly and
-  `funds_type` matches the equivalent direct `FundsType::parse` call.
+  `16,165,1500000,1,DD1620,, DEALER PAYMENTS`, parses every field correctly,
+  including a Text value with no trailing delimiter.
+- A record with an `S` Funds Type composite and every trailing optional
+  field truncated off the line entirely (e.g.
+  `16,115,10000000,S,5000000,4000000,1000000/`) parses correctly, with
+  `bank_reference_number`/`customer_reference_number`/`text` all `None`.
+- A record with a `D` Funds Type composite followed by populated Bank and
+  Customer Reference Numbers parses correctly, and the consumed-field
+  count correctly lands on the reference numbers rather than mistaking
+  part of the `D` composite for them.
 - A `890` record with Amount and Funds Type both defaulted (e.g.
   `16,890,,,,,detail reports will be delayed until 11:00 AM.`) parses with
   `amount: None`, `funds_type: FundsType::Unknown`, and the full message in
   `text`.
+- Text containing embedded commas and a slash after its first character
+  (e.g. `a/b,c,d`) round-trips exactly, confirming the split-then-rejoin
+  reconstruction doesn't lose or misplace the embedded delimiters.
 - A record with Amount entirely defaulted (blank, not zero) yields
-  `amount: None`; a record with a real Amount value round-trips against
-  the `currency`'s `decimals()` correctly for at least two different
-  currencies (e.g. a 2-decimal and a 0-decimal one) to confirm the
-  `CurrencyCode` parameter is actually being used, not ignored.
-- Malformed input (wrong record code, missing Type Code, non-numeric
-  Amount, an invalid Funds Type sub-field) produces the specific,
+  `amount: None`; a record with a real Amount value stores the same raw
+  integer regardless of currency, with `currency` (and its `decimals()`)
+  set to whatever was passed in for at least two different currencies
+  (e.g. a 2-decimal and a 0-decimal one) — confirming `currency` is
+  actually threaded through and attached, not silently dropped.
+- Malformed input (wrong record code, missing Type Code, a negative or
+  non-numeric Amount, an invalid Funds Type sub-field, a `/` inside a
+  reference number, Text beginning with `/`) each produces the specific,
   named `TransactionDetailError` variant, not a generic failure.
+
+## Codegen Note
+
+Unlike `TypeCode`/`CurrencyCode`, there's no large data table here — this
+module was written by hand, not generated from a spec appendix. There's
+nothing to keep in sync via codegen; `src/transaction_detail.rs` is simply
+the source of truth.
