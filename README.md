@@ -91,7 +91,14 @@ cargo test
 cargo clippy --all-targets
 ```
 
-The crate has zero runtime dependencies.
+The crate has zero runtime dependencies. `cargo test` runs both the
+per-module unit tests and `tests/bank_style_files.rs`, a set of
+integration tests against large, multi-group/multi-account files built
+to exercise real-world variations (heavy 88 continuation usage,
+multi-currency files, currency overrides, zero-account groups, bare
+account-only-for-detail records) — constructed from the spec and
+commonly documented implementer conventions, not literal production
+output from any institution.
 
 ## Project layout
 
