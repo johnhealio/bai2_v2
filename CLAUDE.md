@@ -8,3 +8,5 @@ File spec:  https://cdn.bai.org/migrated-from-www/docs/default-source/libraries/
 Github repo:  git@github.com:johnhealio/bai2_v2.git
 
 Phase 1: Initialize Rust Project and TYPE_CODE
+Phase 2: FUND_TYPE
+Phase 3: CURRENCY_CODE
